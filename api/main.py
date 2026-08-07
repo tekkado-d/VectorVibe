@@ -20,9 +20,7 @@ def preload_model():
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Start model loading in background thread
-    thread = threading.Thread(target=preload_model, daemon=True)
-    thread.start()
+    print("VectorVibe API starting — using Hugging Face for embeddings")
     yield
 
 app = FastAPI(title="VectorVibe API", lifespan=lifespan)

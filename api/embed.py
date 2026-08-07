@@ -1,57 +1,58 @@
-import open_clip
-import torch
-from PIL import Image
+import os
 import requests
-from io import BytesIO
 
-# Don't load model at import time — load lazily on first use
-model = None
-preprocess = None
-tokenizer = None
-device = None
+HF_TOKEN = os.getenv('HF_TOKEN')
+HF_API_URL = "https://api-inference.huggingface.co/models/openai/clip-vit-base-patch32"
 
-def load_model():
-    global model, preprocess, tokenizer, device
-    if model is not None:
-        return
-    print("Loading CLIP model...")
-    MODEL_NAME = 'ViT-B-32'
-    PRETRAINED = 'openai'
-    model, _, preprocess = open_clip.create_model_and_transforms(
-        MODEL_NAME, pretrained=PRETRAINED
+headers = {"Authorization": f"Bearer {HF_TOKEN}"}
+
+def embed_text(text: str) -> list[float]:
+    """Send text to Hugging Face CLIP API and get embedding back."""
+    response = requests.post(
+        HF_API_URL,
+        headers=headers,
+        json={"inputs": {"source_sentence": text, "sentences": [text]}}
     )
-    tokenizer = open_clip.get_tokenizer(MODEL_NAME)
-    model.eval()
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    model = model.to(device)
-    print(f"CLIP model loaded on {device}")
+    # HF feature extraction endpoint
+    response2 = requests.post(
+        "https://api-inference.huggingface.co/pipeline/feature-extraction/openai/clip-vit-base-patch32",
+        headers=headers,
+        json={"inputs": text}
+    )
+    if response2.status_code == 200:
+        return response2.json()[0]
+    raise Exception(f"HF API error: {response2.status_code} {response2.text}")
 
 def embed_image_from_url(url: str) -> list[float] | None:
-    load_model()
+    """Download image and embed via Hugging Face CLIP API."""
     try:
-        r = requests.get(url, timeout=8)
-        img = Image.open(BytesIO(r.content)).convert('RGB')
-        tensor = preprocess(img).unsqueeze(0).to(device)
-        with torch.no_grad():
-            vec = model.encode_image(tensor)
-            vec = vec / vec.norm(dim=-1, keepdim=True)
-        return vec.squeeze().cpu().tolist()
+        img_response = requests.get(url, timeout=8)
+        response = requests.post(
+            "https://api-inference.huggingface.co/pipeline/feature-extraction/openai/clip-vit-base-patch32",
+            headers={**headers, "Content-Type": "application/octet-stream"},
+            data=img_response.content
+        )
+        if response.status_code == 200:
+            return response.json()[0]
+        return None
     except Exception as e:
         print(f"Image embed failed: {e}")
         return None
 
-def embed_text(text: str) -> list[float]:
-    load_model()
-    tokens = tokenizer([text]).to(device)
-    with torch.no_grad():
-        vec = model.encode_text(tokens)
-        vec = vec / vec.norm(dim=-1, keepdim=True)
-    return vec.squeeze().cpu().tolist()
+def embed_image(img) -> list[float]:
+    """Embed a PIL image via Hugging Face."""
+    from io import BytesIO
+    buf = BytesIO()
+    img.save(buf, format='JPEG')
+    response = requests.post(
+        "https://api-inference.huggingface.co/pipeline/feature-extraction/openai/clip-vit-base-patch32",
+        headers={**headers, "Content-Type": "application/octet-stream"},
+        data=buf.getvalue()
+    )
+    if response.status_code == 200:
+        return response.json()[0]
+    raise Exception(f"HF API error: {response.status_code}")
 
-def embed_image(img: Image.Image) -> list[float]:
-    load_model()
-    tensor = preprocess(img).unsqueeze(0).to(device)
-    with torch.no_grad():
-        vec = model.encode_image(tensor)
-        vec = vec / vec.norm(dim=-1, keepdim=True)
-    return vec.squeeze().cpu().tolist()
+def load_model():
+    """No-op — model lives on Hugging Face, not locally."""
+    print("Using Hugging Face CLIP API — no local model needed")
