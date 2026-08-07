@@ -12,7 +12,7 @@ interface Product {
 async function getResults(q: string): Promise<Product[]> {
   try {
     const res = await fetch(
-      `http://localhost:8000/search?q=${encodeURIComponent(q)}&limit=40`,
+      `http://localhost:8000/search?q=${encodeURIComponent(q)}&limit=100`,
       { cache: 'no-store' }
     )
     const data = await res.json()
@@ -21,6 +21,7 @@ async function getResults(q: string): Promise<Product[]> {
     return []
   }
 }
+
 export default async function SearchPage({
   searchParams,
 }: {
@@ -30,10 +31,20 @@ export default async function SearchPage({
   const q = params.q || ''
   const results = q ? await getResults(q) : []
 
+  const seen = new Set<string>()
+  const uniqueResults = results.filter(product => {
+    const key = `${product.name.split('|')[0].trim()}-${product.brand}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="border-b border-zinc-800 px-6 py-4 flex items-center gap-4">
-        <a href="/" className="text-zinc-500 text-xs tracking-widest uppercase font-mono hover:text-white transition-colors">VectorVibe</a>
+        <a href="/" className="text-zinc-500 text-xs tracking-widest uppercase font-mono hover:text-white transition-colors">
+          VectorVibe
+        </a>
         <form action="/search" method="GET" className="flex-1 max-w-xl flex gap-2">
           <input
             name="q"
@@ -46,14 +57,15 @@ export default async function SearchPage({
           </button>
         </form>
       </div>
-<div className="max-w-7xl mx-auto px-6 py-8">
+
+      <div className="max-w-7xl mx-auto px-6 py-8">
         {q && (
           <p className="text-zinc-500 text-sm mb-6 font-mono">
-            {results.length} results for &quot;{q}&quot;
+            {uniqueResults.length} results for &quot;{q}&quot;
           </p>
         )}
 
-        {results.length === 0 && q && (
+        {uniqueResults.length === 0 && q && (
           <div className="text-center py-24">
             <p className="text-zinc-400 text-lg mb-2">No results yet</p>
             <p className="text-zinc-600 text-sm">
@@ -63,7 +75,7 @@ export default async function SearchPage({
         )}
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {results.map((product) => (
+          {uniqueResults.map((product) => (
             <a key={product.id} href={product.affiliate_url} target="_blank" rel="noopener noreferrer" className="group block">
               <div className="aspect-[3/4] bg-zinc-900 rounded-lg overflow-hidden mb-3">
                 <img
@@ -73,8 +85,12 @@ export default async function SearchPage({
                 />
               </div>
               <p className="text-zinc-500 text-xs mb-1">{product.brand}</p>
-              <p className="text-white text-sm font-medium leading-tight mb-1 line-clamp-2">{product.name}</p>
-              <p className="text-white text-sm font-bold">£{parseFloat(String(product.price)).toFixed(2)}</p>
+              <p className="text-white text-sm font-medium leading-tight mb-1 line-clamp-2">
+                {product.name.split('|')[0].trim()}
+              </p>
+              <p className="text-white text-sm font-bold">
+                £{parseFloat(String(product.price)).toFixed(2)}
+              </p>
             </a>
           ))}
         </div>

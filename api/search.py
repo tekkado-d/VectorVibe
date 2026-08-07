@@ -14,7 +14,7 @@ def cached_embed_text(query: str) -> tuple:
 
 def semantic_search(
     query: str,
-    limit: int = 40,
+    limit: int = 100,
     gender: str | None = None,
     price_max: float | None = None
 ) -> list[dict]:
