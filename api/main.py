@@ -1,23 +1,42 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from search import semantic_search
 import psycopg2
 import os
+import threading
 from dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI(title="VectorVibe API")
+def preload_model():
+    """Load CLIP model in background so server starts instantly."""
+    try:
+        from embed import load_model
+        load_model()
+    except Exception as e:
+        print(f"Model preload error: {e}")
 
-# Allow the Next.js frontend to call this API
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Start model loading in background thread
+    thread = threading.Thread(target=preload_model, daemon=True)
+    thread.start()
+    yield
+
+app = FastAPI(title="VectorVibe API", lifespan=lifespan)
+
 app.add_middleware(CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"]
 )
 
-# ── GET /search ──────────────────────────────
+@app.get("/health")
+async def health():
+    return {"status": "ok", "message": "VectorVibe API is running"}
+
 @app.get("/search")
 async def search(
     q: str = Query(..., description="Any search query"),
@@ -30,7 +49,6 @@ async def search(
     log_search(q, [r['id'] for r in results])
     return {"query": q, "count": len(results), "results": results}
 
-# ── GET /suggest ─────────────────────────────
 @app.get("/suggest")
 async def suggest(q: str):
     conn = psycopg2.connect(os.getenv('DATABASE_URL'))
@@ -45,7 +63,6 @@ async def suggest(q: str):
     conn.close()
     return {"suggestions": suggestions}
 
-# ── POST /click ──────────────────────────────
 class ClickEvent(BaseModel):
     query: str
     product_id: int
@@ -63,11 +80,6 @@ async def log_click(event: ClickEvent):
     cur.close()
     conn.close()
     return {"ok": True}
-
-# ── GET /health ──────────────────────────────
-@app.get("/health")
-async def health():
-    return {"status": "ok", "message": "VectorVibe API is running"}
 
 def log_search(query: str, result_ids: list[int]):
     try:
