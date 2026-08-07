@@ -5,18 +5,9 @@ from pydantic import BaseModel
 from search import semantic_search
 import psycopg2
 import os
-import threading
 from dotenv import load_dotenv
 
 load_dotenv()
-
-def preload_model():
-    """Load CLIP model in background so server starts instantly."""
-    try:
-        from embed import load_model
-        load_model()
-    except Exception as e:
-        print(f"Model preload error: {e}")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

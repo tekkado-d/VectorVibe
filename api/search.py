@@ -2,15 +2,9 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 from functools import lru_cache
-from embed import embed_text
+from embed_text_onnx import cached_embed_text
 
 load_dotenv()
-
-@lru_cache(maxsize=512)
-def cached_embed_text(query: str) -> tuple:
-    """Cache query embeddings so same query doesn't re-run CLIP."""
-    vec = embed_text(query)
-    return tuple(vec)
 
 def semantic_search(
     query: str,

@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'api'))
 import psycopg2
 import time
 from dotenv import load_dotenv
-from embed import embed_image_from_url
+from embed_gpu import embed_image_from_url
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', 'api', '.env'))
 
