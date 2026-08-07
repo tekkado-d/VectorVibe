@@ -12,9 +12,9 @@ interface Product {
 async function getResults(q: string): Promise<Product[]> {
   try {
     const res = await fetch(
-      `http://localhost:8000/search?q=${encodeURIComponent(q)}&limit=100`,
-      { cache: 'no-store' }
-    )
+    `${process.env.NEXT_PUBLIC_API_URL}/search?q=${encodeURIComponent(q)}&limit=100`,
+    { cache: 'no-store' }
+  )
     const data = await res.json()
     return data.results || []
   } catch (e) {
