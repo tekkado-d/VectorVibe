@@ -1,58 +1,39 @@
 import os
-import requests
+import torch
+import open_clip
+from functools import lru_cache
 
-HF_TOKEN = os.getenv('HF_TOKEN')
-HF_API_URL = "https://api-inference.huggingface.co/models/openai/clip-vit-base-patch32"
+# Text-only CLIP — much lighter than full model
+print("Loading CLIP text encoder...")
+model, _, _ = open_clip.create_model_and_transforms('ViT-B-32', pretrained='openai')
+tokenizer = open_clip.get_tokenizer('ViT-B-32')
+model.eval()
 
-headers = {"Authorization": f"Bearer {HF_TOKEN}"}
+# Text encoder only — strip image encoder to save memory
+model.visual = None
+
+device = 'cpu'
+model = model.to(device)
+print("CLIP text encoder ready")
+
+@lru_cache(maxsize=512)
+def cached_embed_text(query: str) -> tuple:
+    tokens = tokenizer([query]).to(device)
+    with torch.no_grad():
+        vec = model.encode_text(tokens)
+        vec = vec / vec.norm(dim=-1, keepdim=True)
+    return tuple(vec.squeeze().cpu().tolist())
 
 def embed_text(text: str) -> list[float]:
-    """Send text to Hugging Face CLIP API and get embedding back."""
-    response = requests.post(
-        HF_API_URL,
-        headers=headers,
-        json={"inputs": {"source_sentence": text, "sentences": [text]}}
-    )
-    # HF feature extraction endpoint
-    response2 = requests.post(
-        "https://api-inference.huggingface.co/pipeline/feature-extraction/openai/clip-vit-base-patch32",
-        headers=headers,
-        json={"inputs": text}
-    )
-    if response2.status_code == 200:
-        return response2.json()[0]
-    raise Exception(f"HF API error: {response2.status_code} {response2.text}")
+    return list(cached_embed_text(text))
 
 def embed_image_from_url(url: str) -> list[float] | None:
-    """Download image and embed via Hugging Face CLIP API."""
-    try:
-        img_response = requests.get(url, timeout=8)
-        response = requests.post(
-            "https://api-inference.huggingface.co/pipeline/feature-extraction/openai/clip-vit-base-patch32",
-            headers={**headers, "Content-Type": "application/octet-stream"},
-            data=img_response.content
-        )
-        if response.status_code == 200:
-            return response.json()[0]
-        return None
-    except Exception as e:
-        print(f"Image embed failed: {e}")
-        return None
+    """Image embedding runs locally on GPU machine only."""
+    raise NotImplementedError("Image embedding runs on local GPU machine")
 
 def embed_image(img) -> list[float]:
-    """Embed a PIL image via Hugging Face."""
-    from io import BytesIO
-    buf = BytesIO()
-    img.save(buf, format='JPEG')
-    response = requests.post(
-        "https://api-inference.huggingface.co/pipeline/feature-extraction/openai/clip-vit-base-patch32",
-        headers={**headers, "Content-Type": "application/octet-stream"},
-        data=buf.getvalue()
-    )
-    if response.status_code == 200:
-        return response.json()[0]
-    raise Exception(f"HF API error: {response.status_code}")
+    """Image embedding runs locally on GPU machine only."""
+    raise NotImplementedError("Image embedding runs on local GPU machine")
 
 def load_model():
-    """No-op — model lives on Hugging Face, not locally."""
-    print("Using Hugging Face CLIP API — no local model needed")
+    pass  # Already loaded at module level
