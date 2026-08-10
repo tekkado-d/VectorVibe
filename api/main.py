@@ -29,12 +29,22 @@ async def health():
 @app.get("/search")
 async def search(
     q: str = Query(..., description="Any search query"),
-    gender: str | None = Query(None, enum=["m", "f", "unisex"]),
+    gender: str | None = Query(None),
+    price_min: float | None = None,
     price_max: float | None = None,
+    category: str | None = None,
+    brand: str | None = None,
     limit: int = Query(100, le=200)
 ):
-    results = semantic_search(q, limit=limit,
-                              gender=gender, price_max=price_max)
+    results = semantic_search(
+        q,
+        limit=limit,
+        gender=gender,
+        price_min=price_min,
+        price_max=price_max,
+        category=category,
+        brand=brand,
+    )
     log_search(q, [r['id'] for r in results])
     return {"query": q, "count": len(results), "results": results}
 
