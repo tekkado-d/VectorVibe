@@ -259,7 +259,7 @@ export default function SearchPage() {
           {!loading && (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {sorted.map((product) => (
-                
+                <a
                   key={product.id}
                   href={product.affiliate_url}
                   target="_blank"
