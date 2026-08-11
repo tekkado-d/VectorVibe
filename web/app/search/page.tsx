@@ -1,9 +1,7 @@
 'use client'
 
-export const dynamic = 'force-dynamic'
-
-import { useState, useEffect, useCallback } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
+import { Suspense, useState, useEffect, useCallback } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 interface Product {
   id: number
@@ -38,9 +36,8 @@ const SORT_OPTIONS = [
   { label: 'Price: high–low', value: 'price_desc' },
 ]
 
-export default function SearchPage() {
+function SearchResults() {
   const searchParams = useSearchParams()
-  const router = useRouter()
   const q = searchParams.get('q') || ''
 
   const [results, setResults] = useState<Product[]>([])
@@ -54,7 +51,6 @@ export default function SearchPage() {
   const fetchResults = useCallback(async () => {
     if (!q) return
     setLoading(true)
-
     const preset = PRICE_PRESETS[pricePreset]
     const url = new URL(`${process.env.NEXT_PUBLIC_API_URL}/search`)
     url.searchParams.set('q', q)
@@ -63,7 +59,6 @@ export default function SearchPage() {
     if (preset.min) url.searchParams.set('price_min', String(preset.min))
     if (preset.max) url.searchParams.set('price_max', String(preset.max))
     if (brand) url.searchParams.set('brand', brand)
-
     try {
       const res = await fetch(url.toString(), { cache: 'no-store' })
       const data = await res.json()
@@ -75,12 +70,10 @@ export default function SearchPage() {
     }
   }, [q, gender, pricePreset, brand])
 
-  // Re-fetch whenever filters change
   useEffect(() => {
     fetchResults()
   }, [fetchResults])
 
-  // Deduplicate size variants
   const seen = new Set<string>()
   const uniqueResults = results.filter(product => {
     const key = `${product.name.split('|')[0].trim()}-${product.brand}`
@@ -89,19 +82,16 @@ export default function SearchPage() {
     return true
   })
 
-  // Sort client-side (similarity already sorted by API)
   const sorted = [...uniqueResults].sort((a, b) => {
     if (sort === 'price_asc') return Number(a.price) - Number(b.price)
     if (sort === 'price_desc') return Number(b.price) - Number(a.price)
     return 0
   })
 
-  // Extract unique brands from current results for brand filter
   const brands = Array.from(new Set(uniqueResults.map(p => p.brand))).sort()
 
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Header */}
       <div className="border-b border-zinc-800 px-6 py-4 flex items-center gap-4">
         <a href="/" className="text-zinc-500 text-xs tracking-widest uppercase font-mono hover:text-white transition-colors">
           VectorVibe
@@ -120,8 +110,6 @@ export default function SearchPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-6 flex gap-8">
-
-        {/* Filter sidebar */}
         <aside className="w-48 shrink-0">
           <button
             onClick={() => setFiltersOpen(o => !o)}
@@ -132,8 +120,6 @@ export default function SearchPage() {
 
           {filtersOpen && (
             <div className="space-y-6">
-
-              {/* Gender */}
               <div>
                 <p className="text-zinc-500 text-xs uppercase tracking-widest font-mono mb-2">Gender</p>
                 <div className="space-y-1">
@@ -142,9 +128,7 @@ export default function SearchPage() {
                       key={opt.label}
                       onClick={() => setGender(opt.value)}
                       className={`block w-full text-left text-sm px-2 py-1 rounded transition-colors ${
-                        gender === opt.value
-                          ? 'text-white bg-zinc-800'
-                          : 'text-zinc-400 hover:text-white'
+                        gender === opt.value ? 'text-white bg-zinc-800' : 'text-zinc-400 hover:text-white'
                       }`}
                     >
                       {opt.label}
@@ -153,7 +137,6 @@ export default function SearchPage() {
                 </div>
               </div>
 
-              {/* Price */}
               <div>
                 <p className="text-zinc-500 text-xs uppercase tracking-widest font-mono mb-2">Price</p>
                 <div className="space-y-1">
@@ -162,9 +145,7 @@ export default function SearchPage() {
                       key={preset.label}
                       onClick={() => setPricePreset(i)}
                       className={`block w-full text-left text-sm px-2 py-1 rounded transition-colors ${
-                        pricePreset === i
-                          ? 'text-white bg-zinc-800'
-                          : 'text-zinc-400 hover:text-white'
+                        pricePreset === i ? 'text-white bg-zinc-800' : 'text-zinc-400 hover:text-white'
                       }`}
                     >
                       {preset.label}
@@ -173,7 +154,6 @@ export default function SearchPage() {
                 </div>
               </div>
 
-              {/* Sort */}
               <div>
                 <p className="text-zinc-500 text-xs uppercase tracking-widest font-mono mb-2">Sort</p>
                 <div className="space-y-1">
@@ -182,9 +162,7 @@ export default function SearchPage() {
                       key={opt.value}
                       onClick={() => setSort(opt.value)}
                       className={`block w-full text-left text-sm px-2 py-1 rounded transition-colors ${
-                        sort === opt.value
-                          ? 'text-white bg-zinc-800'
-                          : 'text-zinc-400 hover:text-white'
+                        sort === opt.value ? 'text-white bg-zinc-800' : 'text-zinc-400 hover:text-white'
                       }`}
                     >
                       {opt.label}
@@ -193,7 +171,6 @@ export default function SearchPage() {
                 </div>
               </div>
 
-              {/* Brand */}
               {brands.length > 0 && (
                 <div>
                   <p className="text-zinc-500 text-xs uppercase tracking-widest font-mono mb-2">Brand</p>
@@ -201,9 +178,7 @@ export default function SearchPage() {
                     <button
                       onClick={() => setBrand(null)}
                       className={`block w-full text-left text-sm px-2 py-1 rounded transition-colors ${
-                        brand === null
-                          ? 'text-white bg-zinc-800'
-                          : 'text-zinc-400 hover:text-white'
+                        brand === null ? 'text-white bg-zinc-800' : 'text-zinc-400 hover:text-white'
                       }`}
                     >
                       All brands
@@ -213,9 +188,7 @@ export default function SearchPage() {
                         key={b}
                         onClick={() => setBrand(b)}
                         className={`block w-full text-left text-sm px-2 py-1 rounded transition-colors ${
-                          brand === b
-                            ? 'text-white bg-zinc-800'
-                            : 'text-zinc-400 hover:text-white'
+                          brand === b ? 'text-white bg-zinc-800' : 'text-zinc-400 hover:text-white'
                         }`}
                       >
                         {b}
@@ -224,12 +197,10 @@ export default function SearchPage() {
                   </div>
                 </div>
               )}
-
             </div>
           )}
         </aside>
 
-        {/* Results */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between mb-6">
             {q && (
@@ -275,7 +246,7 @@ export default function SearchPage() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <p className="text-zinc-500 text-xs mb-1">{product.brand}</p> Israel kant
+                  <p className="text-zinc-500 text-xs mb-1">{product.brand}</p>
                   <p className="text-white text-sm font-medium leading-tight mb-1 line-clamp-2">
                     {product.name.split('|')[0].trim()}
                   </p>
@@ -289,5 +260,17 @@ export default function SearchPage() {
         </div>
       </div>
     </main>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <p className="text-zinc-500 font-mono text-sm">Loading...</p>
+      </div>
+    }>
+      <SearchResults />
+    </Suspense>
   )
 }
