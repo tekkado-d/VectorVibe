@@ -1,5 +1,7 @@
 'use client'
 
+export const dynamic = 'force-dynamic'
+
 import { useState, useEffect, useCallback } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 
@@ -273,7 +275,7 @@ export default function SearchPage() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <p className="text-zinc-500 text-xs mb-1">{product.brand}</p>
+                  <p className="text-zinc-500 text-xs mb-1">{product.brand}</p> Israel kant
                   <p className="text-white text-sm font-medium leading-tight mb-1 line-clamp-2">
                     {product.name.split('|')[0].trim()}
                   </p>
