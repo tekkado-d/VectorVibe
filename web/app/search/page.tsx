@@ -3,6 +3,8 @@
 import { Suspense, useState, useEffect, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
 
+const API = process.env.NEXT_PUBLIC_API_URL
+
 interface Product {
   id: number
   name: string
@@ -36,6 +38,29 @@ const SORT_OPTIONS = [
   { label: 'Price: high–low', value: 'price_desc' },
 ]
 
+// ── Icons ──────────────────────────────────────────────────────────────
+// Stroke-only SVGs rather than emoji, so they inherit the current text
+// colour and stay in keeping with the rest of the interface.
+function ThumbUp() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+         strokeLinejoin="round" aria-hidden="true">
+      <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+    </svg>
+  )
+}
+
+function ThumbDown() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+         strokeLinejoin="round" aria-hidden="true">
+      <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" />
+    </svg>
+  )
+}
+
 function SearchResults() {
   const searchParams = useSearchParams()
   const q = searchParams.get('q') || ''
@@ -47,12 +72,13 @@ function SearchResults() {
   const [brand, setBrand] = useState<string | null>(null)
   const [sort, setSort] = useState('relevant')
   const [filtersOpen, setFiltersOpen] = useState(true)
+  const [rating, setRating] = useState<'up' | 'down' | null>(null)
 
   const fetchResults = useCallback(async () => {
     if (!q) return
     setLoading(true)
     const preset = PRICE_PRESETS[pricePreset]
-    const url = new URL(`${process.env.NEXT_PUBLIC_API_URL}/search`)
+    const url = new URL(`${API}/search`)
     url.searchParams.set('q', q)
     url.searchParams.set('limit', '100')
     if (gender) url.searchParams.set('gender', gender)
@@ -74,6 +100,42 @@ function SearchResults() {
     fetchResults()
   }, [fetchResults])
 
+  // A rating belongs to one query. New query, clean slate.
+  useEffect(() => {
+    setRating(null)
+  }, [q])
+
+  // ── Click tracking ───────────────────────────────────────────────────
+  // Fired when someone opens a product. The link still opens in a new tab
+  // immediately — this runs alongside it and is allowed to fail silently,
+  // because a broken log should never break a sale.
+  // keepalive: true tells the browser to finish sending even if this page
+  // goes away mid-request.
+  function recordClick(productId: number) {
+    if (!API || !q) return
+    fetch(`${API}/click`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: q, product_id: productId }),
+      keepalive: true,
+    }).catch(() => {})
+  }
+
+  // ── Result rating ────────────────────────────────────────────────────
+  // Clicking the same thumb again clears it locally. Only a set rating is
+  // sent; un-setting is not reported to the server.
+  function recordRating(value: 'up' | 'down') {
+    const next = rating === value ? null : value
+    setRating(next)
+    if (!API || !q || next === null) return
+    fetch(`${API}/feedback`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: q, rating: next === 'up' ? 1 : -1 }),
+      keepalive: true,
+    }).catch(() => {})
+  }
+
   const seen = new Set<string>()
   const uniqueResults = results.filter(product => {
     const key = `${product.name.split('|')[0].trim()}-${product.brand}`
@@ -89,14 +151,15 @@ function SearchResults() {
   })
 
   const brands = Array.from(new Set(uniqueResults.map(p => p.brand))).sort()
+  const showRating = !loading && sorted.length > 0
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <div className="border-b border-zinc-800 px-6 py-4 flex items-center gap-4">
+      <div className="border-b border-zinc-800 px-6 py-4 flex flex-wrap items-center gap-4">
         <a href="/" className="text-zinc-500 text-xs tracking-widest uppercase font-mono hover:text-white transition-colors">
           VectorVibe
         </a>
-        <form action="/search" method="GET" className="flex-1 max-w-xl flex gap-2">
+        <form action="/search" method="GET" className="flex-1 min-w-56 max-w-xl flex gap-2">
           <input
             name="q"
             defaultValue={q}
@@ -107,6 +170,40 @@ function SearchResults() {
             Search
           </button>
         </form>
+
+        {showRating && (
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="text-zinc-600 text-xs font-mono">
+              {rating === null ? 'Good results?' : 'Thanks'}
+            </span>
+            <button
+              type="button"
+              onClick={() => recordRating('up')}
+              aria-pressed={rating === 'up'}
+              aria-label="These results are good"
+              className={`p-2 rounded-lg border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 ${
+                rating === 'up'
+                  ? 'border-zinc-400 bg-zinc-800 text-white'
+                  : 'border-zinc-700 text-zinc-500 hover:text-white hover:border-zinc-500'
+              }`}
+            >
+              <ThumbUp />
+            </button>
+            <button
+              type="button"
+              onClick={() => recordRating('down')}
+              aria-pressed={rating === 'down'}
+              aria-label="These results are bad"
+              className={`p-2 rounded-lg border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 ${
+                rating === 'down'
+                  ? 'border-zinc-400 bg-zinc-800 text-white'
+                  : 'border-zinc-700 text-zinc-500 hover:text-white hover:border-zinc-500'
+              }`}
+            >
+              <ThumbDown />
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-6 flex gap-8">
@@ -237,6 +334,8 @@ function SearchResults() {
                   href={product.affiliate_url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => recordClick(product.id)}
+                  onAuxClick={() => recordClick(product.id)}
                   className="group block"
                 >
                   <div className="aspect-[3/4] bg-zinc-900 rounded-lg overflow-hidden mb-3">

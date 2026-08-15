@@ -174,7 +174,42 @@ def log_click(event: ClickEvent):
         log.warning(json.dumps({"event": "click_failed", "error": str(e)[:200]}))
         return {"ok": False}
 
-
+class FeedbackEvent(BaseModel):
+    query: str
+    rating: int  # 1 = good, -1 = bad
+ 
+ 
+@app.post("/feedback")
+def log_feedback(event: FeedbackEvent):
+    # Reject anything that isn't 1 or -1 rather than writing junk to the
+    # column. This endpoint is public, so it will eventually be poked at.
+    if event.rating not in (1, -1):
+        return {"ok": False, "error": "rating must be 1 or -1"}
+ 
+    # Same shape as /click: attach the rating to the most recent unrated
+    # log row for this query. Postgres cannot do UPDATE ... LIMIT directly,
+    # hence the subquery picking a single id.
+    try:
+        with db() as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    """
+                    UPDATE search_log SET rating = %s
+                    WHERE id = (
+                        SELECT id FROM search_log
+                        WHERE query = %s AND rating IS NULL
+                        ORDER BY created_at DESC LIMIT 1
+                    )
+                    """,
+                    (event.rating, event.query),
+                )
+                conn.commit()
+                updated = cur.rowcount
+        return {"ok": True, "updated": updated}
+    except psycopg2.Error as e:
+        log.warning(json.dumps({"event": "feedback_failed", "error": str(e)[:200]}))
+        return {"ok": False}
+    
 def log_search(
     query: str,
     result_ids: list[int],

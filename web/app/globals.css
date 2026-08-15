@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
+/* The site is dark-only, so there is no light/dark switching here.
+   These two values exist so Tailwind's bg-background / text-foreground
+   utilities resolve to something sensible if you ever use them. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,15 +15,29 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Was hard-coded to Arial, which silently overrode the Geist font
+     being loaded in layout.tsx. Now it uses the loaded font. */
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Anything using font-mono (the eyebrow, result counts) gets the real
+   mono face rather than the browser default. */
+.font-mono,
+code,
+pre {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/* Respect the OS "reduce motion" setting — the card hover zoom is the
+   main thing this switches off. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
