@@ -1,0 +1,41 @@
+# VectorVibe baseline queries. One per line. Lines starting with # are ignored.
+# Keep the groups -- they are how you spot a change that helps one kind of
+# query while quietly breaking another.
+
+# -- literal garments: the CONTROL group. These already work.
+# If a change breaks these, revert it.
+black slip dress
+oversized denim jacket
+red midi skirt
+cream knit jumper
+
+# -- abstract aesthetics: currently strong
+looks like a dog
+cottagecore
+old money
+dark academia
+
+# -- films: mixed, the interesting middle
+American Psycho
+Clueless
+Titanic
+The Matrix
+
+# -- people: currently weakest, the main target of Layer 3
+Christian Bale
+Zendaya
+David Bowie
+Ariana Grande
+Lady Gaga
+CharliXCX
+
+
+# -- occupations: your typical input style
+scientist
+mechanic
+analyst
+
+# -- situational
+something for a wedding
+rainy day in london
+meeting the parents
