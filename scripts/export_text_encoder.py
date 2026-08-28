@@ -1,6 +1,13 @@
 import torch
 import open_clip
 import os
+import os
+from dotenv import load_dotenv
+from pathlib import Path
+load_dotenv(Path(__file__).resolve().parent.parent / "api" / ".env")
+
+MODEL_NAME = os.getenv("CLIP_MODEL", "ViT-B-16")
+PRETRAINED = os.getenv("CLIP_PRETRAINED", "laion2b_s34b_b88k")
 
 print("Loading CLIP model...")
 model, _, _ = open_clip.create_model_and_transforms(
