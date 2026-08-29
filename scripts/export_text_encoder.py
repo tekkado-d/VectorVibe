@@ -10,10 +10,8 @@ MODEL_NAME = os.getenv("CLIP_MODEL", "ViT-B-16")
 PRETRAINED = os.getenv("CLIP_PRETRAINED", "laion2b_s34b_b88k")
 
 print("Loading CLIP model...")
-model, _, _ = open_clip.create_model_and_transforms(
-    'ViT-B-32', pretrained='openai'
-)
-tokenizer = open_clip.get_tokenizer('ViT-B-32')
+model, _, _ = open_clip.create_model_and_transforms(MODEL_NAME, pretrained=PRETRAINED)
+tokenizer = open_clip.get_tokenizer(MODEL_NAME)
 model.eval()
 
 class TextEncoder(torch.nn.Module):

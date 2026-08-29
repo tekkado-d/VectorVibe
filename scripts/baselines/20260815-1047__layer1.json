@@ -1,0 +1,1362 @@
+{
+  "_meta": {
+    "label": "layer1",
+    "note": "prompt template on",
+    "captured_at": "2026-08-15T10:47:02",
+    "api": "http://localhost:8000",
+    "config": {
+      "probes": 10,
+      "template": true,
+      "expansion": false,
+      "template_text": "a product photo of a woman wearing {}"
+    },
+    "queries": [
+      "black slip dress",
+      "oversized denim jacket",
+      "red midi skirt",
+      "cream knit jumper",
+      "looks like a dog",
+      "cottagecore",
+      "old money",
+      "dark academia",
+      "American Psycho",
+      "Clueless",
+      "Titanic",
+      "The Matrix",
+      "Christian Bale",
+      "Zendaya",
+      "David Bowie",
+      "Ariana Grande",
+      "Lady Gaga",
+      "CharliXCX",
+      "scientist",
+      "mechanic",
+      "analyst",
+      "something for a wedding",
+      "rainy day in london",
+      "meeting the parents"
+    ]
+  },
+  "results": {
+    "black slip dress": {
+      "ms": 6492,
+      "results": [
+        {
+          "id": 311713,
+          "name": "Little Black TENCEL\u2122 Dress | Size: S | Color: Bleach Tie Dye",
+          "score": 0.3635
+        },
+        {
+          "id": 315798,
+          "name": "Little Black TENCEL\u2122 Dress | Size: XS | Color: Black",
+          "score": 0.3635
+        },
+        {
+          "id": 454865,
+          "name": "Little Black TENCEL\u2122 Dress | Size: M | Color: Bleach Tie Dye",
+          "score": 0.3635
+        },
+        {
+          "id": 335986,
+          "name": "Little Black TENCEL\u2122 Dress | Size: M | Color: Black",
+          "score": 0.3635
+        },
+        {
+          "id": 481638,
+          "name": "Little Black TENCEL\u2122 Dress | Size: XL | Color: Black",
+          "score": 0.3635
+        },
+        {
+          "id": 327497,
+          "name": "Little Black TENCEL\u2122 Dress | Size: L | Color: Black",
+          "score": 0.3635
+        },
+        {
+          "id": 409218,
+          "name": "Little Black TENCEL\u2122 Dress | Size: XL | Color: Bleach Tie Dye",
+          "score": 0.3635
+        },
+        {
+          "id": 307610,
+          "name": "Little Black TENCEL\u2122 Dress | Size: S | Color: Black",
+          "score": 0.3635
+        },
+        {
+          "id": 357963,
+          "name": "Little Black TENCEL\u2122 Dress | Size: XS | Color: Bleach Tie Dye",
+          "score": 0.3635
+        },
+        {
+          "id": 100746,
+          "name": "boohoo Women's Plus Ruched Poplin Maxi Dress in Black | Size: 20 | Den",
+          "score": 0.3596
+        }
+      ]
+    },
+    "oversized denim jacket": {
+      "ms": 10237,
+      "results": [
+        {
+          "id": 488955,
+          "name": "Tommy Hilfiger Denim Jacket - Medium Blue Cotton",
+          "score": 0.3779
+        },
+        {
+          "id": 95053,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 22",
+          "score": 0.373
+        },
+        {
+          "id": 95051,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 14",
+          "score": 0.373
+        },
+        {
+          "id": 95049,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 16",
+          "score": 0.373
+        },
+        {
+          "id": 95055,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 20",
+          "score": 0.373
+        },
+        {
+          "id": 95061,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 12",
+          "score": 0.373
+        },
+        {
+          "id": 95059,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 24",
+          "score": 0.373
+        },
+        {
+          "id": 95057,
+          "name": "boohoo Women's Plus Denim Zip Up Shift Dress in Mid Blue | Size: 18",
+          "score": 0.373
+        },
+        {
+          "id": 76108,
+          "name": "boohoo Women's Petite Long Sleeve Cinched Waist Denim Dress in Bleache",
+          "score": 0.3718
+        },
+        {
+          "id": 76107,
+          "name": "boohoo Women's Petite Long Sleeve Cinched Waist Denim Dress in Bleache",
+          "score": 0.3718
+        }
+      ]
+    },
+    "red midi skirt": {
+      "ms": 3791,
+      "results": [
+        {
+          "id": 42709,
+          "name": "boohoo Women's Poplin Ruched Waist Maxi Skirt in Red | Size: 4 | Cotto",
+          "score": 0.3658
+        },
+        {
+          "id": 42705,
+          "name": "boohoo Women's Poplin Ruched Waist Maxi Skirt in Red | Size: 8 | Cotto",
+          "score": 0.3658
+        },
+        {
+          "id": 42701,
+          "name": "boohoo Women's Poplin Ruched Waist Maxi Skirt in Red | Size: 12 | Cott",
+          "score": 0.3658
+        },
+        {
+          "id": 42703,
+          "name": "boohoo Women's Poplin Ruched Waist Maxi Skirt in Red | Size: 10 | Cott",
+          "score": 0.3658
+        },
+        {
+          "id": 42711,
+          "name": "boohoo Women's Poplin Ruched Waist Maxi Skirt in Red | Size: 2 | Cotto",
+          "score": 0.3658
+        },
+        {
+          "id": 42707,
+          "name": "boohoo Women's Poplin Ruched Waist Maxi Skirt in Red | Size: 6 | Cotto",
+          "score": 0.3658
+        },
+        {
+          "id": 242851,
+          "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 2",
+          "score": 0.3618
+        },
+        {
+          "id": 34703,
+          "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 1",
+          "score": 0.3616
+        },
+        {
+          "id": 34708,
+          "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 1",
+          "score": 0.3616
+        },
+        {
+          "id": 34707,
+          "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 2",
+          "score": 0.3616
+        }
+      ]
+    },
+    "cream knit jumper": {
+      "ms": 8093,
+      "results": [
+        {
+          "id": 308698,
+          "name": "Sloane Crewneck in Oat Milk | Size: M",
+          "score": 0.3709
+        },
+        {
+          "id": 412602,
+          "name": "Sloane Crewneck in Oat Milk | Size: XS",
+          "score": 0.3709
+        },
+        {
+          "id": 335636,
+          "name": "Sloane Crewneck in Oat Milk | Size: L",
+          "score": 0.3709
+        },
+        {
+          "id": 308699,
+          "name": "Sloane Crewneck in Oat Milk | Size: XXL",
+          "score": 0.3709
+        },
+        {
+          "id": 228790,
+          "name": "Sloane Crewneck in Oat Milk | Size: XXS",
+          "score": 0.3709
+        },
+        {
+          "id": 404969,
+          "name": "Sloane Crewneck in Oat Milk | Size: S",
+          "score": 0.3709
+        },
+        {
+          "id": 60953,
+          "name": "boohoo Women's Chunky Cable Knit Jumper in Stone | Size: Medium | Deni",
+          "score": 0.3688
+        },
+        {
+          "id": 60954,
+          "name": "boohoo Women's Chunky Cable Knit Jumper in Stone | Size: Large | Denim",
+          "score": 0.3688
+        },
+        {
+          "id": 361071,
+          "name": "Chloe' Cashmere And Wool Pullover",
+          "score": 0.3676
+        },
+        {
+          "id": 81138,
+          "name": "boohoo Women's Textured Knit Collar Detail Zip Through Knitted Cardiga",
+          "score": 0.3666
+        }
+      ]
+    },
+    "looks like a dog": {
+      "ms": 10971,
+      "results": [
+        {
+          "id": 69977,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 69972,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 69971,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 69973,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 69974,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 69975,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 69976,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3204
+        },
+        {
+          "id": 222303,
+          "name": "Cardigan Dam19e Rose-Fluo | Color: ROSE FLUO | Size: XS/S",
+          "score": 0.3202
+        },
+        {
+          "id": 29240,
+          "name": "boohoo Women's Plus Basic Oversized Long Sleeve T-Shirt in Yellow | Si",
+          "score": 0.319
+        },
+        {
+          "id": 29244,
+          "name": "boohoo Women's Plus Basic Oversized Long Sleeve T-Shirt in Yellow | Si",
+          "score": 0.319
+        }
+      ]
+    },
+    "cottagecore": {
+      "ms": 5713,
+      "results": [
+        {
+          "id": 354789,
+          "name": "Roll-Edge Sweater Tee - Purple | Size: M",
+          "score": 0.3188
+        },
+        {
+          "id": 278832,
+          "name": "Roll-Edge Sweater Tee - Purple | Size: XS",
+          "score": 0.3188
+        },
+        {
+          "id": 338902,
+          "name": "Roll-Edge Sweater Tee - Purple | Size: XXS",
+          "score": 0.3188
+        },
+        {
+          "id": 71172,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        },
+        {
+          "id": 71171,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        },
+        {
+          "id": 71173,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        },
+        {
+          "id": 71174,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        },
+        {
+          "id": 71175,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        },
+        {
+          "id": 71176,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        },
+        {
+          "id": 71177,
+          "name": "boohoo Women's Plus Structured Zip Down Collared Top in Black | Size: ",
+          "score": 0.3167
+        }
+      ]
+    },
+    "old money": {
+      "ms": 14238,
+      "results": [
+        {
+          "id": 275634,
+          "name": "PURITAN Mens White & Beige Printed Short Sleeve Shirt XL Casual Cotton",
+          "score": 0.3111
+        },
+        {
+          "id": 31402,
+          "name": "boohoo Women's Plus Basic Oversized Boxy Crop T-Shirt in Charcoal | Si",
+          "score": 0.3103
+        },
+        {
+          "id": 31398,
+          "name": "boohoo Women's Plus Basic Oversized Boxy Crop T-Shirt in Charcoal | Si",
+          "score": 0.3103
+        },
+        {
+          "id": 31399,
+          "name": "boohoo Women's Plus Basic Oversized Boxy Crop T-Shirt in Charcoal | Si",
+          "score": 0.3103
+        },
+        {
+          "id": 31400,
+          "name": "boohoo Women's Plus Basic Oversized Boxy Crop T-Shirt in Charcoal | Si",
+          "score": 0.3103
+        },
+        {
+          "id": 31401,
+          "name": "boohoo Women's Plus Basic Oversized Boxy Crop T-Shirt in Charcoal | Si",
+          "score": 0.3103
+        },
+        {
+          "id": 320220,
+          "name": "boohoo Women's Plus Rib Cotton Mix Dropped Hem Maxi Dress in Khaki | S",
+          "score": 0.3102
+        },
+        {
+          "id": 31717,
+          "name": "boohoo Women's Plus Rib Cotton Mix Dropped Hem Maxi Dress in Khaki | S",
+          "score": 0.3101
+        },
+        {
+          "id": 31715,
+          "name": "boohoo Women's Plus Rib Cotton Mix Dropped Hem Maxi Dress in Khaki | S",
+          "score": 0.3101
+        },
+        {
+          "id": 31718,
+          "name": "boohoo Women's Plus Rib Cotton Mix Dropped Hem Maxi Dress in Khaki | S",
+          "score": 0.3101
+        }
+      ]
+    },
+    "dark academia": {
+      "ms": 3597,
+      "results": [
+        {
+          "id": 84386,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 84385,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 84384,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 84381,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 84380,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 84383,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 84382,
+          "name": "boohoo Women's Plus Textured High Neck Ruched Side Short Sleeve Top in",
+          "score": 0.3266
+        },
+        {
+          "id": 28653,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 18",
+          "score": 0.3232
+        },
+        {
+          "id": 28649,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 16",
+          "score": 0.3232
+        },
+        {
+          "id": 28655,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 12",
+          "score": 0.3232
+        }
+      ]
+    },
+    "American Psycho": {
+      "ms": 15874,
+      "results": [
+        {
+          "id": 92572,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 92567,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 92568,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 92566,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 92570,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 92569,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 92571,
+          "name": "boohoo Women's Plus Seam Detail Balloon Sleeve Mini Dress in Baby Blue",
+          "score": 0.3095
+        },
+        {
+          "id": 80078,
+          "name": "boohoo Women's Bride To Be Embroidered Tulle Veil in White | Knitted",
+          "score": 0.3093
+        },
+        {
+          "id": 69973,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3066
+        },
+        {
+          "id": 69974,
+          "name": "boohoo Women's Plus Bow Print Long Sleeve Shirt & Trouser Pyjama Set i",
+          "score": 0.3066
+        }
+      ]
+    },
+    "Clueless": {
+      "ms": 10118,
+      "results": [
+        {
+          "id": 107246,
+          "name": "boohoo Women's Plus Polka Dot Layered Hem Mini Skirt in Black | Size: ",
+          "score": 0.3194
+        },
+        {
+          "id": 107245,
+          "name": "boohoo Women's Plus Polka Dot Layered Hem Mini Skirt in Black | Size: ",
+          "score": 0.3194
+        },
+        {
+          "id": 107248,
+          "name": "boohoo Women's Plus Polka Dot Layered Hem Mini Skirt in Black | Size: ",
+          "score": 0.3194
+        },
+        {
+          "id": 107244,
+          "name": "boohoo Women's Plus Polka Dot Layered Hem Mini Skirt in Black | Size: ",
+          "score": 0.3194
+        },
+        {
+          "id": 107247,
+          "name": "boohoo Women's Plus Polka Dot Layered Hem Mini Skirt in Black | Size: ",
+          "score": 0.3194
+        },
+        {
+          "id": 107243,
+          "name": "boohoo Women's Plus Polka Dot Layered Hem Mini Skirt in Black | Size: ",
+          "score": 0.3194
+        },
+        {
+          "id": 45661,
+          "name": "boohoo Women's Plus Denim Mini Skirt in Ecru | Size: 16",
+          "score": 0.3177
+        },
+        {
+          "id": 45666,
+          "name": "boohoo Women's Plus Denim Mini Skirt in Ecru | Size: 24",
+          "score": 0.3177
+        },
+        {
+          "id": 45665,
+          "name": "boohoo Women's Plus Denim Mini Skirt in Ecru | Size: 18",
+          "score": 0.3177
+        },
+        {
+          "id": 45664,
+          "name": "boohoo Women's Plus Denim Mini Skirt in Ecru | Size: 20",
+          "score": 0.3177
+        }
+      ]
+    },
+    "Titanic": {
+      "ms": 6255,
+      "results": [
+        {
+          "id": 41501,
+          "name": "boohoo Women's Plus Bodice Detail Tie Front Maxi Skater Dress in Black",
+          "score": 0.3152
+        },
+        {
+          "id": 41500,
+          "name": "boohoo Women's Plus Bodice Detail Tie Front Maxi Skater Dress in Black",
+          "score": 0.3152
+        },
+        {
+          "id": 394172,
+          "name": "boohoo Women's Plus Linen Look Volume Sleeve Tiered Midaxi Dress in Bl",
+          "score": 0.309
+        },
+        {
+          "id": 48803,
+          "name": "boohoo Women's Plus Linen Look Volume Sleeve Tiered Midaxi Dress in Bl",
+          "score": 0.3089
+        },
+        {
+          "id": 48799,
+          "name": "boohoo Women's Plus Linen Look Volume Sleeve Tiered Midaxi Dress in Bl",
+          "score": 0.3089
+        },
+        {
+          "id": 48801,
+          "name": "boohoo Women's Plus Linen Look Volume Sleeve Tiered Midaxi Dress in Bl",
+          "score": 0.3089
+        },
+        {
+          "id": 36538,
+          "name": "boohoo Women's Plus Cotton Poplin Bardot Top & Skirt Co Ord in Black |",
+          "score": 0.3087
+        },
+        {
+          "id": 36532,
+          "name": "boohoo Women's Plus Cotton Poplin Bardot Top & Skirt Co Ord in Black |",
+          "score": 0.3087
+        },
+        {
+          "id": 36533,
+          "name": "boohoo Women's Plus Cotton Poplin Bardot Top & Skirt Co Ord in Black |",
+          "score": 0.3087
+        },
+        {
+          "id": 36534,
+          "name": "boohoo Women's Plus Cotton Poplin Bardot Top & Skirt Co Ord in Black |",
+          "score": 0.3087
+        }
+      ]
+    },
+    "The Matrix": {
+      "ms": 14664,
+      "results": [
+        {
+          "id": 38358,
+          "name": "boohoo Women's Cinched Waist Longline Parka in Black | Size: 6 | Woven",
+          "score": 0.3246
+        },
+        {
+          "id": 38359,
+          "name": "boohoo Women's Cinched Waist Longline Parka in Black | Size: 4 | Woven",
+          "score": 0.3246
+        },
+        {
+          "id": 38355,
+          "name": "boohoo Women's Cinched Waist Longline Parka in Black | Size: 12 | Wove",
+          "score": 0.3246
+        },
+        {
+          "id": 38357,
+          "name": "boohoo Women's Cinched Waist Longline Parka in Black | Size: 8 | Woven",
+          "score": 0.3246
+        },
+        {
+          "id": 38356,
+          "name": "boohoo Women's Cinched Waist Longline Parka in Black | Size: 10 | Wove",
+          "score": 0.3246
+        },
+        {
+          "id": 107594,
+          "name": "boohoo Women's Tall Super Soft High Neck Knitted Maxi Dress in Black |",
+          "score": 0.3178
+        },
+        {
+          "id": 107593,
+          "name": "boohoo Women's Tall Super Soft High Neck Knitted Maxi Dress in Black |",
+          "score": 0.3178
+        },
+        {
+          "id": 28655,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 12",
+          "score": 0.3167
+        },
+        {
+          "id": 28649,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 16",
+          "score": 0.3167
+        },
+        {
+          "id": 28650,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 14",
+          "score": 0.3167
+        }
+      ]
+    },
+    "Christian Bale": {
+      "ms": 7546,
+      "results": [
+        {
+          "id": 79856,
+          "name": "boohoo Women's Double Layer Slinky Ruched Maxi Skirt With Ring Trim in",
+          "score": 0.3132
+        },
+        {
+          "id": 79852,
+          "name": "boohoo Women's Double Layer Slinky Ruched Maxi Skirt With Ring Trim in",
+          "score": 0.3132
+        },
+        {
+          "id": 79855,
+          "name": "boohoo Women's Double Layer Slinky Ruched Maxi Skirt With Ring Trim in",
+          "score": 0.3132
+        },
+        {
+          "id": 79854,
+          "name": "boohoo Women's Double Layer Slinky Ruched Maxi Skirt With Ring Trim in",
+          "score": 0.3132
+        },
+        {
+          "id": 79851,
+          "name": "boohoo Women's Double Layer Slinky Ruched Maxi Skirt With Ring Trim in",
+          "score": 0.3132
+        },
+        {
+          "id": 79853,
+          "name": "boohoo Women's Double Layer Slinky Ruched Maxi Skirt With Ring Trim in",
+          "score": 0.3132
+        },
+        {
+          "id": 62306,
+          "name": "DSGN Studio Women's Sports Sculpt Zip Through Jacket in Chocolate | Si",
+          "score": 0.3082
+        },
+        {
+          "id": 62305,
+          "name": "DSGN Studio Women's Sports Sculpt Zip Through Jacket in Chocolate | Si",
+          "score": 0.3082
+        },
+        {
+          "id": 62304,
+          "name": "DSGN Studio Women's Sports Sculpt Zip Through Jacket in Chocolate | Si",
+          "score": 0.3082
+        },
+        {
+          "id": 62303,
+          "name": "DSGN Studio Women's Sports Sculpt Zip Through Jacket in Chocolate | Si",
+          "score": 0.3082
+        }
+      ]
+    },
+    "Zendaya": {
+      "ms": 5235,
+      "results": [
+        {
+          "id": 99794,
+          "name": "boohoo Women's Gold Pendant Layered Necklace",
+          "score": 0.322
+        },
+        {
+          "id": 73577,
+          "name": "boohoo Women's Black Denim Bucket Hat",
+          "score": 0.3124
+        },
+        {
+          "id": 75348,
+          "name": "boohoo Women's Heart Pendant & Pearl Layered Necklace in Gold | Metal/",
+          "score": 0.31
+        },
+        {
+          "id": 74936,
+          "name": "boohoo Women's Chocolate Distressed Cap | Woven",
+          "score": 0.3098
+        },
+        {
+          "id": 82987,
+          "name": "DSGN Studio Women's Tricot Side Stripe Zip Through Track Jacket in Gre",
+          "score": 0.3086
+        },
+        {
+          "id": 84652,
+          "name": "boohoo Women's Abstract Hammered Chunky Necklace in Gold | Metal",
+          "score": 0.3067
+        },
+        {
+          "id": 59182,
+          "name": "boohoo Women's Textured Cowl Neck Halter Bodysuit in Purple | Size: 12",
+          "score": 0.3065
+        },
+        {
+          "id": 59186,
+          "name": "boohoo Women's Textured Cowl Neck Halter Bodysuit in Purple | Size: 2 ",
+          "score": 0.3065
+        },
+        {
+          "id": 59185,
+          "name": "boohoo Women's Textured Cowl Neck Halter Bodysuit in Purple | Size: 4 ",
+          "score": 0.3065
+        },
+        {
+          "id": 59184,
+          "name": "boohoo Women's Textured Cowl Neck Halter Bodysuit in Purple | Size: 6 ",
+          "score": 0.3065
+        }
+      ]
+    },
+    "David Bowie": {
+      "ms": 15975,
+      "results": [
+        {
+          "id": 224297,
+          "name": "Classic Blazer - Houndstooth | Size: S",
+          "score": 0.3074
+        },
+        {
+          "id": 404875,
+          "name": "Classic Blazer - Houndstooth | Size: M",
+          "score": 0.3074
+        },
+        {
+          "id": 421172,
+          "name": "Classic Blazer - Houndstooth | Size: XS",
+          "score": 0.3074
+        },
+        {
+          "id": 421166,
+          "name": "Classic Blazer - Houndstooth | Size: L",
+          "score": 0.3074
+        },
+        {
+          "id": 78380,
+          "name": "DSGN Studio Women's Sculpt Zip Through Jacket in Charcoal | Size: Larg",
+          "score": 0.3057
+        },
+        {
+          "id": 78378,
+          "name": "DSGN Studio Women's Sculpt Zip Through Jacket in Charcoal | Size: 2XL ",
+          "score": 0.3057
+        },
+        {
+          "id": 78379,
+          "name": "DSGN Studio Women's Sculpt Zip Through Jacket in Charcoal | Size: Medi",
+          "score": 0.3057
+        },
+        {
+          "id": 78381,
+          "name": "DSGN Studio Women's Sculpt Zip Through Jacket in Charcoal | Size: 3XL ",
+          "score": 0.3057
+        },
+        {
+          "id": 365614,
+          "name": "Dress Cindel Frnch-Stripe | Color: FRNCH STRIPE | Size: S",
+          "score": 0.3032
+        },
+        {
+          "id": 272147,
+          "name": "Dress Cindel Frnch-Stripe | Color: FRNCH STRIPE | Size: L",
+          "score": 0.3032
+        }
+      ]
+    },
+    "Ariana Grande": {
+      "ms": 5208,
+      "results": [
+        {
+          "id": 244608,
+          "name": "boohoo Women's Premium Super Soft Wide Strap Square Neck Vest in Black",
+          "score": 0.3158
+        },
+        {
+          "id": 40005,
+          "name": "boohoo Women's Premium Super Soft Wide Strap Square Neck Vest in Black",
+          "score": 0.3147
+        },
+        {
+          "id": 40004,
+          "name": "boohoo Women's Premium Super Soft Wide Strap Square Neck Vest in Black",
+          "score": 0.3147
+        },
+        {
+          "id": 44896,
+          "name": "boohoo Women's Bengaline Key Hole Cap Sleeve Top in Ivory | Size: 2 | ",
+          "score": 0.3113
+        },
+        {
+          "id": 44895,
+          "name": "boohoo Women's Bengaline Key Hole Cap Sleeve Top in Ivory | Size: 4 | ",
+          "score": 0.3113
+        },
+        {
+          "id": 44894,
+          "name": "boohoo Women's Bengaline Key Hole Cap Sleeve Top in Ivory | Size: 6 | ",
+          "score": 0.3113
+        },
+        {
+          "id": 44893,
+          "name": "boohoo Women's Bengaline Key Hole Cap Sleeve Top in Ivory | Size: 8 | ",
+          "score": 0.3113
+        },
+        {
+          "id": 44892,
+          "name": "boohoo Women's Bengaline Key Hole Cap Sleeve Top in Ivory | Size: 10 |",
+          "score": 0.3113
+        },
+        {
+          "id": 44891,
+          "name": "boohoo Women's Bengaline Key Hole Cap Sleeve Top in Ivory | Size: 12 |",
+          "score": 0.3113
+        },
+        {
+          "id": 59184,
+          "name": "boohoo Women's Textured Cowl Neck Halter Bodysuit in Purple | Size: 6 ",
+          "score": 0.3057
+        }
+      ]
+    },
+    "Lady Gaga": {
+      "ms": 4059,
+      "results": [
+        {
+          "id": 264975,
+          "name": "boohoo Women's Gem Stone Western Cowboy Hat in Black | Denim/Metal",
+          "score": 0.297
+        },
+        {
+          "id": 101965,
+          "name": "DSGN Studio Women's Sport Contour Seamless Zip Through Sports Jacket i",
+          "score": 0.2953
+        },
+        {
+          "id": 101963,
+          "name": "DSGN Studio Women's Sport Contour Seamless Zip Through Sports Jacket i",
+          "score": 0.2953
+        },
+        {
+          "id": 101961,
+          "name": "DSGN Studio Women's Sport Contour Seamless Zip Through Sports Jacket i",
+          "score": 0.2953
+        },
+        {
+          "id": 76570,
+          "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+          "score": 0.2932
+        },
+        {
+          "id": 76569,
+          "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+          "score": 0.2932
+        },
+        {
+          "id": 76565,
+          "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+          "score": 0.2932
+        },
+        {
+          "id": 76566,
+          "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+          "score": 0.2932
+        },
+        {
+          "id": 76567,
+          "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+          "score": 0.2932
+        },
+        {
+          "id": 76568,
+          "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+          "score": 0.2932
+        }
+      ]
+    },
+    "CharliXCX": {
+      "ms": 9469,
+      "results": [
+        {
+          "id": 70876,
+          "name": "boohoo Women's Pink Glitter Cowboy Hat | Polyester",
+          "score": 0.3148
+        },
+        {
+          "id": 70905,
+          "name": "boohoo Women's Chocolate Textured Jersey Headband | Polyurethane",
+          "score": 0.3106
+        },
+        {
+          "id": 74936,
+          "name": "boohoo Women's Chocolate Distressed Cap | Woven",
+          "score": 0.3086
+        },
+        {
+          "id": 473131,
+          "name": "Core T-shirt in White | Size: S",
+          "score": 0.3072
+        },
+        {
+          "id": 315419,
+          "name": "Jeans Go0001-232 Mid-Blue | Color: MID BLUE | Size: 29",
+          "score": 0.3051
+        },
+        {
+          "id": 355563,
+          "name": "Jeans Go0001-232 Mid-Blue | Color: MID BLUE | Size: 27",
+          "score": 0.3051
+        },
+        {
+          "id": 101317,
+          "name": "boohoo Women's Plus Gathered Shoulder Pad Asymmetric Blouse in Black |",
+          "score": 0.3043
+        },
+        {
+          "id": 101313,
+          "name": "boohoo Women's Plus Gathered Shoulder Pad Asymmetric Blouse in Black |",
+          "score": 0.3043
+        },
+        {
+          "id": 101321,
+          "name": "boohoo Women's Plus Gathered Shoulder Pad Asymmetric Blouse in Black |",
+          "score": 0.3043
+        },
+        {
+          "id": 101319,
+          "name": "boohoo Women's Plus Gathered Shoulder Pad Asymmetric Blouse in Black |",
+          "score": 0.3043
+        }
+      ]
+    },
+    "scientist": {
+      "ms": 11972,
+      "results": [
+        {
+          "id": 78983,
+          "name": "boohoo Women's Woven Tailored Barrel Sleeve Wrap Blazer in Light Grey ",
+          "score": 0.314
+        },
+        {
+          "id": 78982,
+          "name": "boohoo Women's Woven Tailored Barrel Sleeve Wrap Blazer in Light Grey ",
+          "score": 0.314
+        },
+        {
+          "id": 78985,
+          "name": "boohoo Women's Woven Tailored Barrel Sleeve Wrap Blazer in Light Grey ",
+          "score": 0.314
+        },
+        {
+          "id": 78984,
+          "name": "boohoo Women's Woven Tailored Barrel Sleeve Wrap Blazer in Light Grey ",
+          "score": 0.314
+        },
+        {
+          "id": 326096,
+          "name": "Bamboo Sateen Eye Mask | Color: Ocean | Size: One Size",
+          "score": 0.3105
+        },
+        {
+          "id": 455086,
+          "name": "Bamboo Sateen Eye Mask | Color: Slate | Size: One Size",
+          "score": 0.3105
+        },
+        {
+          "id": 35637,
+          "name": "boohoo Women's Plus Ruched Fitted Shirt in Red | Size: 16 | Polyuretha",
+          "score": 0.3104
+        },
+        {
+          "id": 35642,
+          "name": "boohoo Women's Plus Ruched Fitted Shirt in Red | Size: 12 | Polyuretha",
+          "score": 0.3104
+        },
+        {
+          "id": 35641,
+          "name": "boohoo Women's Plus Ruched Fitted Shirt in Red | Size: 24 | Polyuretha",
+          "score": 0.3104
+        },
+        {
+          "id": 35640,
+          "name": "boohoo Women's Plus Ruched Fitted Shirt in Red | Size: 18 | Polyuretha",
+          "score": 0.3104
+        }
+      ]
+    },
+    "mechanic": {
+      "ms": 13284,
+      "results": [
+        {
+          "id": 79416,
+          "name": "boohoo Women's Funnel Neck Balloon Sleeve Zip Through Top in Charcoal ",
+          "score": 0.3252
+        },
+        {
+          "id": 352585,
+          "name": "boohoo Women's Plus Single Drawstring Waist Trouser - Stripe in Navy |",
+          "score": 0.3238
+        },
+        {
+          "id": 449599,
+          "name": "boohoo Women's Plus Single Drawstring Waist Trouser - Stripe in Navy |",
+          "score": 0.3238
+        },
+        {
+          "id": 58664,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        },
+        {
+          "id": 58663,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        },
+        {
+          "id": 58665,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        },
+        {
+          "id": 58669,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        },
+        {
+          "id": 58668,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        },
+        {
+          "id": 58667,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        },
+        {
+          "id": 58666,
+          "name": "boohoo Women's Plus Contrast Stitch Denim Straight Leg Jean in Indigo ",
+          "score": 0.3237
+        }
+      ]
+    },
+    "analyst": {
+      "ms": 14964,
+      "results": [
+        {
+          "id": 28655,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 12",
+          "score": 0.3152
+        },
+        {
+          "id": 28651,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 22",
+          "score": 0.3152
+        },
+        {
+          "id": 28654,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 24",
+          "score": 0.3152
+        },
+        {
+          "id": 28652,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 20",
+          "score": 0.3152
+        },
+        {
+          "id": 28650,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 14",
+          "score": 0.3152
+        },
+        {
+          "id": 28649,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 16",
+          "score": 0.3152
+        },
+        {
+          "id": 28653,
+          "name": "boohoo Women's Plus Linen Look Midi Shirt Dress in Black | Size: 18",
+          "score": 0.3152
+        },
+        {
+          "id": 79812,
+          "name": "boohoo Women's Zip Through Hooded Jumper & Trouser in Chocolate | Size",
+          "score": 0.3127
+        },
+        {
+          "id": 79811,
+          "name": "boohoo Women's Zip Through Hooded Jumper & Trouser in Chocolate | Size",
+          "score": 0.3127
+        },
+        {
+          "id": 79810,
+          "name": "boohoo Women's Zip Through Hooded Jumper & Trouser in Chocolate | Size",
+          "score": 0.3127
+        }
+      ]
+    },
+    "something for a wedding": {
+      "ms": 3507,
+      "results": [
+        {
+          "id": 73703,
+          "name": "boohoo Women's Beaded Embroidered Bridal Clutch Bag in White | Pearl",
+          "score": 0.338
+        },
+        {
+          "id": 397286,
+          "name": "boohoo Women's Linen Trapeze Maxi Dress in Natural | Size: 10 | Linen/",
+          "score": 0.3254
+        },
+        {
+          "id": 83011,
+          "name": "boohoo Women's Linen Trapeze Maxi Dress in Natural | Size: 4 | Linen/W",
+          "score": 0.3251
+        },
+        {
+          "id": 83009,
+          "name": "boohoo Women's Linen Trapeze Maxi Dress in Natural | Size: 6 | Linen/W",
+          "score": 0.3251
+        },
+        {
+          "id": 47819,
+          "name": "boohoo Women's Plus Polka Dot Satin Lace Panel Angel Sleeve Maxi Dress",
+          "score": 0.325
+        },
+        {
+          "id": 47823,
+          "name": "boohoo Women's Plus Polka Dot Satin Lace Panel Angel Sleeve Maxi Dress",
+          "score": 0.325
+        },
+        {
+          "id": 47834,
+          "name": "boohoo Women's Plus Polka Dot Satin Lace Panel Angel Sleeve Maxi Dress",
+          "score": 0.325
+        },
+        {
+          "id": 47825,
+          "name": "boohoo Women's Plus Polka Dot Satin Lace Panel Angel Sleeve Maxi Dress",
+          "score": 0.325
+        },
+        {
+          "id": 47827,
+          "name": "boohoo Women's Plus Polka Dot Satin Lace Panel Angel Sleeve Maxi Dress",
+          "score": 0.325
+        },
+        {
+          "id": 47830,
+          "name": "boohoo Women's Plus Polka Dot Satin Lace Panel Angel Sleeve Maxi Dress",
+          "score": 0.325
+        }
+      ]
+    },
+    "rainy day in london": {
+      "ms": 11598,
+      "results": [
+        {
+          "id": 69810,
+          "name": "boohoo Women's Textured Cinched Waist Trench Coat in Khaki | Size: 12 ",
+          "score": 0.334
+        },
+        {
+          "id": 69811,
+          "name": "boohoo Women's Textured Cinched Waist Trench Coat in Khaki | Size: 10 ",
+          "score": 0.334
+        },
+        {
+          "id": 69814,
+          "name": "boohoo Women's Textured Cinched Waist Trench Coat in Khaki | Size: 4 |",
+          "score": 0.334
+        },
+        {
+          "id": 69813,
+          "name": "boohoo Women's Textured Cinched Waist Trench Coat in Khaki | Size: 6 |",
+          "score": 0.334
+        },
+        {
+          "id": 69812,
+          "name": "boohoo Women's Textured Cinched Waist Trench Coat in Khaki | Size: 8 |",
+          "score": 0.334
+        },
+        {
+          "id": 65440,
+          "name": "boohoo Women's Longline Quilted Puffer Jacket in Khaki | Size: 4 | Pla",
+          "score": 0.3294
+        },
+        {
+          "id": 65439,
+          "name": "boohoo Women's Longline Quilted Puffer Jacket in Khaki | Size: 6 | Pla",
+          "score": 0.3294
+        },
+        {
+          "id": 60232,
+          "name": "boohoo Women's Faux Fur Collar Faux Leather Cinched Waist Jacket in Bl",
+          "score": 0.327
+        },
+        {
+          "id": 60230,
+          "name": "boohoo Women's Faux Fur Collar Faux Leather Cinched Waist Jacket in Bl",
+          "score": 0.327
+        },
+        {
+          "id": 60231,
+          "name": "boohoo Women's Faux Fur Collar Faux Leather Cinched Waist Jacket in Bl",
+          "score": 0.327
+        }
+      ]
+    },
+    "meeting the parents": {
+      "ms": 10131,
+      "results": [
+        {
+          "id": 330398,
+          "name": "Tank Mas00 Paon | Color: PAON | Size: M",
+          "score": 0.3199
+        },
+        {
+          "id": 379836,
+          "name": "Tank Mas00 Paon | Color: PAON | Size: S",
+          "score": 0.3199
+        },
+        {
+          "id": 85885,
+          "name": "DSGN Studio Women's Tricot Straight Leg Jogger Pants in Burgundy | Siz",
+          "score": 0.3173
+        },
+        {
+          "id": 85884,
+          "name": "DSGN Studio Women's Tricot Straight Leg Jogger Pants in Burgundy | Siz",
+          "score": 0.3173
+        },
+        {
+          "id": 85883,
+          "name": "DSGN Studio Women's Tricot Straight Leg Jogger Pants in Burgundy | Siz",
+          "score": 0.3173
+        },
+        {
+          "id": 90408,
+          "name": "boohoo Women's Maternity Supersoft Sculpt Long Sleeve Top in Coffee | ",
+          "score": 0.3168
+        },
+        {
+          "id": 90406,
+          "name": "boohoo Women's Maternity Supersoft Sculpt Long Sleeve Top in Coffee | ",
+          "score": 0.3168
+        },
+        {
+          "id": 90407,
+          "name": "boohoo Women's Maternity Supersoft Sculpt Long Sleeve Top in Coffee | ",
+          "score": 0.3168
+        },
+        {
+          "id": 90409,
+          "name": "boohoo Women's Maternity Supersoft Sculpt Long Sleeve Top in Coffee | ",
+          "score": 0.3168
+        },
+        {
+          "id": 102305,
+          "name": "boohoo Women's Maternity Rib Wrap Top & Trouser Co-Ord in Chocolate | ",
+          "score": 0.3134
+        }
+      ]
+    }
+  }
+}

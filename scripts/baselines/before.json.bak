@@ -1,0 +1,1326 @@
+{
+  "_meta": {
+    "api": "http://localhost:8000",
+    "captured_at": "2026-08-12 13:01:43"
+  },
+  "black slip dress": {
+    "ms": 6494,
+    "results": [
+      {
+        "id": 235885,
+        "name": "KAREN MILLEN Womens Slip Dress Black Sleeveless Short UK 10",
+        "score": 0.3314
+      },
+      {
+        "id": 256534,
+        "name": "Womens Camisole Vest Black V-Neck Sleeveless S",
+        "score": 0.3278
+      },
+      {
+        "id": 242761,
+        "name": "boohoo Women's Bengaline Square Neck Skater Dress in Black | Size: 8",
+        "score": 0.3274
+      },
+      {
+        "id": 244498,
+        "name": "boohoo Women's Bengaline Square Neck Skater Dress in Black | Size: 2",
+        "score": 0.3274
+      },
+      {
+        "id": 242143,
+        "name": "boohoo Women's Bengaline Square Neck Skater Dress in Black | Size: 4",
+        "score": 0.3274
+      },
+      {
+        "id": 53849,
+        "name": "boohoo Women's Bengaline Square Neck Skater Dress in Black | Size: 12",
+        "score": 0.3273
+      },
+      {
+        "id": 53848,
+        "name": "boohoo Women's Bengaline Square Neck Skater Dress in Black | Size: 14",
+        "score": 0.3273
+      },
+      {
+        "id": 53850,
+        "name": "boohoo Women's Bengaline Square Neck Skater Dress in Black | Size: 10",
+        "score": 0.3273
+      },
+      {
+        "id": 43638,
+        "name": "boohoo Women's Linen Look Drape Wrap Mini Dress in Black | Size: 10",
+        "score": 0.3269
+      },
+      {
+        "id": 43639,
+        "name": "boohoo Women's Linen Look Drape Wrap Mini Dress in Black | Size: 8",
+        "score": 0.3269
+      }
+    ]
+  },
+  "oversized denim jacket": {
+    "ms": 6585,
+    "results": [
+      {
+        "id": 287758,
+        "name": "ESPRIT Mens Blue Denim Jacket M Cotton Blend Classic Button Closure Ca",
+        "score": 0.353
+      },
+      {
+        "id": 299227,
+        "name": "LEVI'S Mens Blue Denim Button Cotton Jacket M Classic Casual Outerwear",
+        "score": 0.3515
+      },
+      {
+        "id": 363850,
+        "name": "LEVI'S Mens Blue Cotton Denim Jacket M Button Plain Classic Faded Casu",
+        "score": 0.3498
+      },
+      {
+        "id": 312373,
+        "name": "LEVI'S Mens Blue Denim Button Jacket M Cotton Classic Casual Light Was",
+        "score": 0.3495
+      },
+      {
+        "id": 71586,
+        "name": "boohoo Women's Oversized Denim Shirt in Mid Wash | Size: 8 | Denim/Cot",
+        "score": 0.3494
+      },
+      {
+        "id": 71587,
+        "name": "boohoo Women's Oversized Denim Shirt in Mid Wash | Size: 6 | Denim/Cot",
+        "score": 0.3494
+      },
+      {
+        "id": 71588,
+        "name": "boohoo Women's Oversized Denim Shirt in Mid Wash | Size: 4 | Denim/Cot",
+        "score": 0.3494
+      },
+      {
+        "id": 71585,
+        "name": "boohoo Women's Oversized Denim Shirt in Mid Wash | Size: 10 | Denim/Co",
+        "score": 0.3494
+      },
+      {
+        "id": 302507,
+        "name": "MARC CAIN Womens Blue Denim Jacket M Cotton Button Plain Classic Casua",
+        "score": 0.3492
+      },
+      {
+        "id": 248131,
+        "name": "LEVI'S Womens Blue Denim Cotton Blend Button Jacket L Classic Casual D",
+        "score": 0.349
+      }
+    ]
+  },
+  "red midi skirt": {
+    "ms": 6137,
+    "results": [
+      {
+        "id": 242851,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 2",
+        "score": 0.3368
+      },
+      {
+        "id": 34705,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 2",
+        "score": 0.3365
+      },
+      {
+        "id": 34708,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 1",
+        "score": 0.3365
+      },
+      {
+        "id": 34706,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 1",
+        "score": 0.3365
+      },
+      {
+        "id": 34707,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 2",
+        "score": 0.3365
+      },
+      {
+        "id": 34704,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 1",
+        "score": 0.3365
+      },
+      {
+        "id": 34703,
+        "name": "boohoo Women's Plus Shirred Waist V Neck Midaxi Dress in Red | Size: 1",
+        "score": 0.3365
+      },
+      {
+        "id": 218657,
+        "name": "boohoo Women's Plus Cotton Poplin Deep V Cinched Waist Detail Maxi Dre",
+        "score": 0.3308
+      },
+      {
+        "id": 27067,
+        "name": "boohoo Women's Modal Super Soft Ruched Side Relaxed Fit Mini Dress in ",
+        "score": 0.3202
+      },
+      {
+        "id": 27068,
+        "name": "boohoo Women's Modal Super Soft Ruched Side Relaxed Fit Mini Dress in ",
+        "score": 0.3202
+      }
+    ]
+  },
+  "cream knit jumper": {
+    "ms": 7678,
+    "results": [
+      {
+        "id": 337786,
+        "name": "Jil Sander Wool And Silk Sweater",
+        "score": 0.3565
+      },
+      {
+        "id": 71109,
+        "name": "boohoo Women's Chunky Knit Oversized Knitted Jumper in Cream | Size: S",
+        "score": 0.3555
+      },
+      {
+        "id": 71108,
+        "name": "boohoo Women's Chunky Knit Oversized Knitted Jumper in Cream | Size: L",
+        "score": 0.3555
+      },
+      {
+        "id": 71107,
+        "name": "boohoo Women's Chunky Knit Oversized Knitted Jumper in Cream | Size: M",
+        "score": 0.3555
+      },
+      {
+        "id": 60953,
+        "name": "boohoo Women's Chunky Cable Knit Jumper in Stone | Size: Medium | Deni",
+        "score": 0.3535
+      },
+      {
+        "id": 60954,
+        "name": "boohoo Women's Chunky Cable Knit Jumper in Stone | Size: Large | Denim",
+        "score": 0.3535
+      },
+      {
+        "id": 274751,
+        "name": "MONTE CARLO Mens Beige & Cream Patterned Jumper V-Neck Basic Knit L Co",
+        "score": 0.3527
+      },
+      {
+        "id": 252433,
+        "name": "Womens Beige & Cream Striped Top Long Sleeve Button Neck Shirt M Vinta",
+        "score": 0.3525
+      },
+      {
+        "id": 275210,
+        "name": "JOHN PARTRIDGE Mens Aran Jumper Cream Crew Neck Cable Knit Wool L",
+        "score": 0.3522
+      },
+      {
+        "id": 350514,
+        "name": "Chaps Ralph Lauren Jumper - XL Beige Linen Blend",
+        "score": 0.3508
+      }
+    ]
+  },
+  "looks like a dog": {
+    "ms": 6323,
+    "results": [
+      {
+        "id": 333040,
+        "name": "London Fog Trail Lines Google Pixel 8 Case",
+        "score": 0.246
+      },
+      {
+        "id": 288898,
+        "name": "Aeropostale Jeans - 30W UK 8 Blue Cotton",
+        "score": 0.2423
+      },
+      {
+        "id": 452579,
+        "name": "Motivi Cargo Trousers - 27W UK 8 Beige Cotton Blend",
+        "score": 0.2401
+      },
+      {
+        "id": 459668,
+        "name": "Rifle Skinny Cord Trousers - 30W UK 8 Black Cotton",
+        "score": 0.2389
+      },
+      {
+        "id": 470409,
+        "name": "Underwear Moschino Graphic T-Shirt - Small Grey Cotton",
+        "score": 0.2387
+      },
+      {
+        "id": 200256,
+        "name": "Leo Cuff | Material: 24K Plated Gold | Size: L",
+        "score": 0.2383
+      },
+      {
+        "id": 492691,
+        "name": "Leo Cuff | Material: Polished Brass | Size: S/M",
+        "score": 0.2383
+      },
+      {
+        "id": 491427,
+        "name": "Leo Cuff | Material: 24K Plated Gold | Size: S/M",
+        "score": 0.2383
+      },
+      {
+        "id": 462685,
+        "name": "Leo Cuff | Material: Polished Brass | Size: L",
+        "score": 0.2383
+      },
+      {
+        "id": 479962,
+        "name": "Men's Tank Top Sets 2026 Summer Quick drying Y2k tracksuits Breathable",
+        "score": 0.2381
+      }
+    ]
+  },
+  "cottagecore": {
+    "ms": 6173,
+    "results": [
+      {
+        "id": 404338,
+        "name": "Maya in Mosaic Print Bottoms | Size: Small | Color: Mosaics Print",
+        "score": 0.2562
+      },
+      {
+        "id": 210096,
+        "name": "Maya in Mosaic Print Bottoms | Size: Extra Small | Color: Mosaics Prin",
+        "score": 0.2562
+      },
+      {
+        "id": 354683,
+        "name": "Maya in Mosaic Print Bottoms | Size: Medium | Color: Mosaics Print",
+        "score": 0.2562
+      },
+      {
+        "id": 454838,
+        "name": "Maya in Mosaic Print Bottoms | Size: Extra Large | Color: Mosaics Prin",
+        "score": 0.2562
+      },
+      {
+        "id": 401483,
+        "name": "Maya in Mosaic Print Bottoms | Size: Large | Color: Mosaics Print",
+        "score": 0.2562
+      },
+      {
+        "id": 280601,
+        "name": "Monaco Bandeau Ring Bikini Top - Sunrise | Size: XL",
+        "score": 0.2559
+      },
+      {
+        "id": 280599,
+        "name": "Monaco Bandeau Ring Bikini Top - Sunrise | Size: M",
+        "score": 0.2559
+      },
+      {
+        "id": 210827,
+        "name": "Monaco Bandeau Ring Bikini Top - Sunrise | Size: L",
+        "score": 0.2559
+      },
+      {
+        "id": 405061,
+        "name": "Monaco Bandeau Ring Bikini Top - Sunrise | Size: XS",
+        "score": 0.2559
+      },
+      {
+        "id": 279955,
+        "name": "Camilla in Sage Top | Size: Small | Color: Green",
+        "score": 0.2559
+      }
+    ]
+  },
+  "old money": {
+    "ms": 10103,
+    "results": [
+      {
+        "id": 381835,
+        "name": "AWGE Mens Black Graphic T-Shirt M Short Sleeve Crew Neck Streetwear Co",
+        "score": 0.275
+      },
+      {
+        "id": 395385,
+        "name": "Boss Te_Lupo Animal Print T-shirt - Navy - L",
+        "score": 0.2719
+      },
+      {
+        "id": 358983,
+        "name": "ADIDAS Mens Black Originals Crew Neck S Cotton Logo Sweatshirt Casual",
+        "score": 0.2677
+      },
+      {
+        "id": 275634,
+        "name": "PURITAN Mens White & Beige Printed Short Sleeve Shirt XL Casual Cotton",
+        "score": 0.2669
+      },
+      {
+        "id": 410206,
+        "name": "Mens White Graphic T-Shirt XL Short Sleeve Crew Neck Old Extinct Print",
+        "score": 0.2634
+      },
+      {
+        "id": 344649,
+        "name": "NATURAL ISSUE Mens Blue & Yellow Printed Cotton Blend Shirt M Casual V",
+        "score": 0.2625
+      },
+      {
+        "id": 298222,
+        "name": "BERMUDA BAY Mens Green Palm Trees Postcard Print Silk Shirt XL Hawaiia",
+        "score": 0.2608
+      },
+      {
+        "id": 492696,
+        "name": "OLD MAUI Mens Green Rayon Shirt M Hawaiian Tropical Floral Pineapple P",
+        "score": 0.2603
+      },
+      {
+        "id": 251953,
+        "name": "WOOLRICH Mens Beige & Green Patterned Casual Shirt M Tribal Print",
+        "score": 0.2588
+      },
+      {
+        "id": 298013,
+        "name": "Mens Shirt Brown Crazy Pattern L",
+        "score": 0.2575
+      }
+    ]
+  },
+  "dark academia": {
+    "ms": 6231,
+    "results": [
+      {
+        "id": 67241,
+        "name": "boohoo Women's Wool Look Check Micro Short in Chocolate | Size: 12 | W",
+        "score": 0.2553
+      },
+      {
+        "id": 67242,
+        "name": "boohoo Women's Wool Look Check Micro Short in Chocolate | Size: 10 | W",
+        "score": 0.2553
+      },
+      {
+        "id": 69425,
+        "name": "boohoo Women's Ruched Textured Ruffle Skort in Charcoal | Size: 6 | Wo",
+        "score": 0.2536
+      },
+      {
+        "id": 69426,
+        "name": "boohoo Women's Ruched Textured Ruffle Skort in Charcoal | Size: 4 | Wo",
+        "score": 0.2536
+      },
+      {
+        "id": 69427,
+        "name": "boohoo Women's Ruched Textured Ruffle Skort in Charcoal | Size: 2 | Wo",
+        "score": 0.2536
+      },
+      {
+        "id": 84453,
+        "name": "boohoo Women's Plus Stripe Rugby Knitted Jumper in Pink | Size: 20/22",
+        "score": 0.2472
+      },
+      {
+        "id": 84454,
+        "name": "boohoo Women's Plus Stripe Rugby Knitted Jumper in Pink | Size: 16/18",
+        "score": 0.2472
+      },
+      {
+        "id": 84455,
+        "name": "boohoo Women's Plus Stripe Rugby Knitted Jumper in Pink | Size: 12/14",
+        "score": 0.2472
+      },
+      {
+        "id": 360144,
+        "name": "TOMMY HILFIGER Womens Black Pleated Mini Cotton Skirt XS Signature Sty",
+        "score": 0.2452
+      },
+      {
+        "id": 61817,
+        "name": "DSGN Studio Women's Oversized Knit Funnel Neck Bomber in Burgundy | Si",
+        "score": 0.2428
+      }
+    ]
+  },
+  "American Psycho": {
+    "ms": 10206,
+    "results": [
+      {
+        "id": 195186,
+        "name": "Patrick Bateman Suit",
+        "score": 0.2882
+      },
+      {
+        "id": 195285,
+        "name": "Mens Agent 47 Hitman Black Suit Costume Package Suit | Shirt | Tie",
+        "score": 0.2591
+      },
+      {
+        "id": 199434,
+        "name": "Mens 100 Percent Wool Suits - Gray Business Suit",
+        "score": 0.2564
+      },
+      {
+        "id": 372657,
+        "name": "Tazio Men's 3-Piece Solid Suit - Slim Fit Business Wear with Discount",
+        "score": 0.2556
+      },
+      {
+        "id": 195678,
+        "name": "\"Mens Stacy Adams Suit - Stacy Adams Suit Men's Designer Suit - Vested",
+        "score": 0.2512
+      },
+      {
+        "id": 221504,
+        "name": "Mens John Wick Vested Black Suit",
+        "score": 0.2499
+      },
+      {
+        "id": 198862,
+        "name": "Mens John Wick Black Suit Package + Shirt & Tie",
+        "score": 0.2492
+      },
+      {
+        "id": 194639,
+        "name": "Mens John Wick Vested Black Suit Package + Shirt & Tie",
+        "score": 0.2486
+      },
+      {
+        "id": 272824,
+        "name": "Mens Black Single Breasted Blazer",
+        "score": 0.2472
+      },
+      {
+        "id": 206387,
+        "name": "48 Extra Long Sport Coat",
+        "score": 0.2471
+      }
+    ]
+  },
+  "Clueless": {
+    "ms": 6203,
+    "results": [
+      {
+        "id": 67242,
+        "name": "boohoo Women's Wool Look Check Micro Short in Chocolate | Size: 10 | W",
+        "score": 0.2712
+      },
+      {
+        "id": 67241,
+        "name": "boohoo Women's Wool Look Check Micro Short in Chocolate | Size: 12 | W",
+        "score": 0.2712
+      },
+      {
+        "id": 69427,
+        "name": "boohoo Women's Ruched Textured Ruffle Skort in Charcoal | Size: 2 | Wo",
+        "score": 0.2638
+      },
+      {
+        "id": 69425,
+        "name": "boohoo Women's Ruched Textured Ruffle Skort in Charcoal | Size: 6 | Wo",
+        "score": 0.2638
+      },
+      {
+        "id": 69426,
+        "name": "boohoo Women's Ruched Textured Ruffle Skort in Charcoal | Size: 4 | Wo",
+        "score": 0.2638
+      },
+      {
+        "id": 105405,
+        "name": "boohoo Women's Quilted Denim Jacket in Bleach Wash | Size: 12 | Denim/",
+        "score": 0.2589
+      },
+      {
+        "id": 105406,
+        "name": "boohoo Women's Quilted Denim Jacket in Bleach Wash | Size: 10 | Denim/",
+        "score": 0.2589
+      },
+      {
+        "id": 105407,
+        "name": "boohoo Women's Quilted Denim Jacket in Bleach Wash | Size: 8 | Denim/P",
+        "score": 0.2589
+      },
+      {
+        "id": 225686,
+        "name": "Unbranded Mini Skirt - 32W UK 12 Cream Polyester Blend",
+        "score": 0.2579
+      },
+      {
+        "id": 37958,
+        "name": "boohoo Women's Hooded Contrast Trim Mac in Black | Size: 12 | Denim/Po",
+        "score": 0.2571
+      }
+    ]
+  },
+  "Titanic": {
+    "ms": 9964,
+    "results": [
+      {
+        "id": 270661,
+        "name": "NFL Mens Black Titans Graphic T-Shirt 2XL Short Sleeve Crew Neck Cotto",
+        "score": 0.2677
+      },
+      {
+        "id": 274540,
+        "name": "Atlanta Fruit Of The Loom Single Stitch T-Shirt - XL Black Cotton",
+        "score": 0.2632
+      },
+      {
+        "id": 277024,
+        "name": "2PAC Womens Black Graphic T-Shirt L Short Sleeve Crew Neck Tupac Calif",
+        "score": 0.2629
+      },
+      {
+        "id": 326080,
+        "name": "Pink Floyd  Unbranded Band Sweatshirt - XS Blue Cotton Blend | Size: x",
+        "score": 0.2573
+      },
+      {
+        "id": 288291,
+        "name": "Age 14 Trussardi Spellout T-Shirt - XL White Cotton | Size: x-large",
+        "score": 0.2543
+      },
+      {
+        "id": 474211,
+        "name": "Made in USA Ocean City Maryland Jerzees Sweatshirt - Medium Black Cott",
+        "score": 0.2535
+      },
+      {
+        "id": 227269,
+        "name": "Caribbean Cruise Co Max Single Stitch T-Shirt - Medium Grey Cotton",
+        "score": 0.2524
+      },
+      {
+        "id": 350359,
+        "name": "TOMMY JEANS Womens White Sailing Gear Crew Neck XS Cotton Blend Sweats",
+        "score": 0.2522
+      },
+      {
+        "id": 227008,
+        "name": "NAUTICA Mens Blue & Red Cotton Graphic T-Shirt L Short Sleeve Crew Nec",
+        "score": 0.252
+      },
+      {
+        "id": 489647,
+        "name": "TREASURE ISLAND BAHAMA Womens Sweatshirt Green USA XL",
+        "score": 0.2508
+      }
+    ]
+  },
+  "The Matrix": {
+    "ms": 6156,
+    "results": [
+      {
+        "id": 491003,
+        "name": "Mini Kaftan in Green Swirl | Size: OS",
+        "score": 0.2494
+      },
+      {
+        "id": 73871,
+        "name": "DSGN Studio Women's Crew Neck Button Through Long Sleeve Top in Auberg",
+        "score": 0.2394
+      },
+      {
+        "id": 73872,
+        "name": "DSGN Studio Women's Crew Neck Button Through Long Sleeve Top in Auberg",
+        "score": 0.2394
+      },
+      {
+        "id": 73869,
+        "name": "DSGN Studio Women's Crew Neck Button Through Long Sleeve Top in Auberg",
+        "score": 0.2394
+      },
+      {
+        "id": 73870,
+        "name": "DSGN Studio Women's Crew Neck Button Through Long Sleeve Top in Auberg",
+        "score": 0.2394
+      },
+      {
+        "id": 35819,
+        "name": "DSGN Studio Women's Towelling Applique Straight Leg Jogger Pants in Au",
+        "score": 0.2355
+      },
+      {
+        "id": 35821,
+        "name": "DSGN Studio Women's Towelling Applique Straight Leg Jogger Pants in Au",
+        "score": 0.2355
+      },
+      {
+        "id": 35818,
+        "name": "DSGN Studio Women's Towelling Applique Straight Leg Jogger Pants in Au",
+        "score": 0.2355
+      },
+      {
+        "id": 35820,
+        "name": "DSGN Studio Women's Towelling Applique Straight Leg Jogger Pants in Au",
+        "score": 0.2355
+      },
+      {
+        "id": 35815,
+        "name": "DSGN Studio Women's Towelling Applique Straight Leg Jogger Pants in Au",
+        "score": 0.2355
+      }
+    ]
+  },
+  "Christian Bale": {
+    "ms": 9539,
+    "results": [
+      {
+        "id": 195186,
+        "name": "Patrick Bateman Suit",
+        "score": 0.2732
+      },
+      {
+        "id": 195937,
+        "name": "Mens Western Cowboy Tail Tuxedo in Black",
+        "score": 0.2535
+      },
+      {
+        "id": 194509,
+        "name": "Men Classic Fit Suit - Pleated Pants Gray Athletic Fit Suits - Executi",
+        "score": 0.2478
+      },
+      {
+        "id": 204369,
+        "name": "Mens Navy Blue Wedding Tuxedo - Dark Blue Tuxedo Suit\" Mens Modern Woo",
+        "score": 0.246
+      },
+      {
+        "id": 195285,
+        "name": "Mens Agent 47 Hitman Black Suit Costume Package Suit | Shirt | Tie",
+        "score": 0.2429
+      },
+      {
+        "id": 221504,
+        "name": "Mens John Wick Vested Black Suit",
+        "score": 0.2427
+      },
+      {
+        "id": 195161,
+        "name": "1950s Tuxedo - 1950s Mens Attire - 50s Mens Style -  Old suit style",
+        "score": 0.2419
+      },
+      {
+        "id": 199452,
+        "name": "Peaky Blinder Wedding Suit",
+        "score": 0.2402
+      },
+      {
+        "id": 195005,
+        "name": "Brooklyn",
+        "score": 0.2386
+      },
+      {
+        "id": 253066,
+        "name": "Cowboy Tuxedo Black Notch Lapel",
+        "score": 0.2384
+      }
+    ]
+  },
+  "Zendaya": {
+    "ms": 6132,
+    "results": [
+      {
+        "id": 40004,
+        "name": "boohoo Women's Premium Super Soft Wide Strap Square Neck Vest in Black",
+        "score": 0.2834
+      },
+      {
+        "id": 40005,
+        "name": "boohoo Women's Premium Super Soft Wide Strap Square Neck Vest in Black",
+        "score": 0.2834
+      },
+      {
+        "id": 104350,
+        "name": "boohoo Women's Matte Slinky Square Neck Vest in Red | Size: 12 | Denim",
+        "score": 0.2769
+      },
+      {
+        "id": 104352,
+        "name": "boohoo Women's Matte Slinky Square Neck Vest in Red | Size: 4 | Denim/",
+        "score": 0.2769
+      },
+      {
+        "id": 92024,
+        "name": "boohoo Women's Tall Linen Look Tie Side T-Shirt in Black | Size: 10 | ",
+        "score": 0.2744
+      },
+      {
+        "id": 92023,
+        "name": "boohoo Women's Tall Linen Look Tie Side T-Shirt in Black | Size: 12 | ",
+        "score": 0.2744
+      },
+      {
+        "id": 92022,
+        "name": "boohoo Women's Tall Linen Look Tie Side T-Shirt in Black | Size: 14 | ",
+        "score": 0.2744
+      },
+      {
+        "id": 92026,
+        "name": "boohoo Women's Tall Linen Look Tie Side T-Shirt in Black | Size: 6 | L",
+        "score": 0.2744
+      },
+      {
+        "id": 92027,
+        "name": "boohoo Women's Tall Linen Look Tie Side T-Shirt in Black | Size: 4 | L",
+        "score": 0.2744
+      },
+      {
+        "id": 92025,
+        "name": "boohoo Women's Tall Linen Look Tie Side T-Shirt in Black | Size: 8 | L",
+        "score": 0.2744
+      }
+    ]
+  },
+  "David Bowie": {
+    "ms": 9569,
+    "results": [
+      {
+        "id": 441351,
+        "name": "CHIKO Clovia Round Toe Block Heels Knee High Boots",
+        "score": 0.2742
+      },
+      {
+        "id": 203929,
+        "name": "Mens Slim Fit Topcoat - Black Color Slim fit overcoat - Wool Overcoat",
+        "score": 0.2681
+      },
+      {
+        "id": 195602,
+        "name": "Mens Robert De Niro Casino Movie Blazer Red",
+        "score": 0.2657
+      },
+      {
+        "id": 220837,
+        "name": "Mens Robert De Niro Casino Movie Blazer in Red",
+        "score": 0.2657
+      },
+      {
+        "id": 195886,
+        "name": "White and Orange Prom Tuxedo - Wedding Suit - Groom tuxedo Suit",
+        "score": 0.2649
+      },
+      {
+        "id": 251302,
+        "name": "Matching Mens and Women Mens Jacket Orange Wholesale Womens Blazer",
+        "score": 0.2642
+      },
+      {
+        "id": 233162,
+        "name": "CHIKO Akari Square Toe, Pointy Toe Block Heels Pumps Shoes",
+        "score": 0.2621
+      },
+      {
+        "id": 199275,
+        "name": "Mens Black Peak Lapel Suit",
+        "score": 0.2595
+      },
+      {
+        "id": 273087,
+        "name": "Black and Gold Suit - Gold Tuxedo",
+        "score": 0.2593
+      },
+      {
+        "id": 212750,
+        "name": "Mens Blues Brothers Black Suit Costume Package Suit | Shirt | Tie",
+        "score": 0.2589
+      }
+    ]
+  },
+  "Ariana Grande": {
+    "ms": 6308,
+    "results": [
+      {
+        "id": 296227,
+        "name": "DSGN Studio Women's Sculpt Halter Neck Bra in Baby Pink | Size: XL | P",
+        "score": 0.2795
+      },
+      {
+        "id": 264566,
+        "name": "DSGN Studio Women's Sculpt Halter Neck Bra in Baby Pink | Size: Medium",
+        "score": 0.2795
+      },
+      {
+        "id": 29218,
+        "name": "DSGN Studio Women's Sculpt Halter Neck Bra in Baby Pink | Size: Large ",
+        "score": 0.2794
+      },
+      {
+        "id": 108126,
+        "name": "boohoo Women's Mid Rise Fitted Pelmet Mini Skirt in Rose | Size: 10 | ",
+        "score": 0.2729
+      },
+      {
+        "id": 108127,
+        "name": "boohoo Women's Mid Rise Fitted Pelmet Mini Skirt in Rose | Size: 8 | W",
+        "score": 0.2729
+      },
+      {
+        "id": 108128,
+        "name": "boohoo Women's Mid Rise Fitted Pelmet Mini Skirt in Rose | Size: 6 | W",
+        "score": 0.2729
+      },
+      {
+        "id": 108125,
+        "name": "boohoo Women's Mid Rise Fitted Pelmet Mini Skirt in Rose | Size: 12 | ",
+        "score": 0.2729
+      },
+      {
+        "id": 31541,
+        "name": "DSGN Studio Women's Colour Block Short in Baby Pink | Size: XL | Woven",
+        "score": 0.2665
+      },
+      {
+        "id": 31540,
+        "name": "DSGN Studio Women's Colour Block Short in Baby Pink | Size: XS | Woven",
+        "score": 0.2665
+      },
+      {
+        "id": 216624,
+        "name": "DSGN Studio Women's Colour Block Short in Baby Pink | Size: Medium | W",
+        "score": 0.2662
+      }
+    ]
+  },
+  "Lady Gaga": {
+    "ms": 6274,
+    "results": [
+      {
+        "id": 70680,
+        "name": "boohoo Women's Foldover Velvet Bandeau Top in Black | Size: 6",
+        "score": 0.2831
+      },
+      {
+        "id": 70679,
+        "name": "boohoo Women's Foldover Velvet Bandeau Top in Black | Size: 8",
+        "score": 0.2831
+      },
+      {
+        "id": 70678,
+        "name": "boohoo Women's Foldover Velvet Bandeau Top in Black | Size: 10",
+        "score": 0.2831
+      },
+      {
+        "id": 70681,
+        "name": "boohoo Women's Foldover Velvet Bandeau Top in Black | Size: 4",
+        "score": 0.2831
+      },
+      {
+        "id": 70682,
+        "name": "boohoo Women's Foldover Velvet Bandeau Top in Black | Size: 2",
+        "score": 0.2831
+      },
+      {
+        "id": 76570,
+        "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+        "score": 0.2792
+      },
+      {
+        "id": 76569,
+        "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+        "score": 0.2792
+      },
+      {
+        "id": 76568,
+        "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+        "score": 0.2792
+      },
+      {
+        "id": 76567,
+        "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+        "score": 0.2792
+      },
+      {
+        "id": 76566,
+        "name": "boohoo Women's Mesh Polka Dot High Neck Ruched Side Asymmetric Top in ",
+        "score": 0.2792
+      }
+    ]
+  },
+  "CharliXCX": {
+    "ms": 6228,
+    "results": [
+      {
+        "id": 464286,
+        "name": "Top Mimosa taupe | Size: S",
+        "score": 0.2848
+      },
+      {
+        "id": 405574,
+        "name": "Top Mimosa taupe | Size: XS",
+        "score": 0.2848
+      },
+      {
+        "id": 453097,
+        "name": "Top Mimosa taupe | Size: M",
+        "score": 0.2848
+      },
+      {
+        "id": 456557,
+        "name": "Top Mimosa taupe | Size: L",
+        "score": 0.2848
+      },
+      {
+        "id": 355563,
+        "name": "Jeans Go0001-232 Mid-Blue | Color: MID BLUE | Size: 27",
+        "score": 0.2818
+      },
+      {
+        "id": 315419,
+        "name": "Jeans Go0001-232 Mid-Blue | Color: MID BLUE | Size: 29",
+        "score": 0.2818
+      },
+      {
+        "id": 70344,
+        "name": "DSGN Studio Women's Sport Oversized Hoodie in Pine | Size: Small | Kni",
+        "score": 0.2806
+      },
+      {
+        "id": 70343,
+        "name": "DSGN Studio Women's Sport Oversized Hoodie in Pine | Size: 3XL | Knitt",
+        "score": 0.2806
+      },
+      {
+        "id": 70342,
+        "name": "DSGN Studio Women's Sport Oversized Hoodie in Pine | Size: XS | Knitte",
+        "score": 0.2806
+      },
+      {
+        "id": 299637,
+        "name": "40 Weft Checked Trousers - 31W UK 12 Brown Cotton",
+        "score": 0.2769
+      }
+    ]
+  },
+  "scientist": {
+    "ms": 9877,
+    "results": [
+      {
+        "id": 373201,
+        "name": "GILDAN Mens Black Segerstrom Volleyball Graphic T-Shirt XL Short Sleev",
+        "score": 0.2675
+      },
+      {
+        "id": 451718,
+        "name": "SONAR VANITY Mens Blue Sonata Arctica Graphic T-Shirt M V-Neck Cotton",
+        "score": 0.261
+      },
+      {
+        "id": 482983,
+        "name": "SCREEN STARS BEST Mens White San Joaquin Aquatics Classic XL Short Sle",
+        "score": 0.2534
+      },
+      {
+        "id": 486098,
+        "name": "THE BEST Mens Yellow Kitty Hawk Scientists Graphic T-Shirt M Short Sle",
+        "score": 0.2516
+      },
+      {
+        "id": 389261,
+        "name": "adidas Men's Terrex Geonature Graphic T-Shirt - Non-Dyed | Size: 2XL",
+        "score": 0.2515
+      },
+      {
+        "id": 238577,
+        "name": "adidas Originals Unisex Shmoofoil Out of the Park T-Shirt - Dark Brown",
+        "score": 0.2508
+      },
+      {
+        "id": 203367,
+        "name": "Nasa Hanes Graphic T-Shirt - 2XL White Cotton",
+        "score": 0.2503
+      },
+      {
+        "id": 366895,
+        "name": "REEBOK Mens Black Montreal Canadiens NHL Graphic T-Shirt M Crew Neck S",
+        "score": 0.2498
+      },
+      {
+        "id": 242101,
+        "name": "Parlez Ludis T-Shirt - Black - L",
+        "score": 0.2497
+      },
+      {
+        "id": 445219,
+        "name": "Parlez Ludis T-Shirt - Black - S",
+        "score": 0.2497
+      }
+    ]
+  },
+  "mechanic": {
+    "ms": 6213,
+    "results": [
+      {
+        "id": 490445,
+        "name": "DICKIES Mens Grey Work Shirt L Polyester Blend Classic Button-Up Pract",
+        "score": 0.2647
+      },
+      {
+        "id": 420168,
+        "name": "Dolce & Gabbana Jeans - 28W UK 6 Beige Cotton",
+        "score": 0.2593
+      },
+      {
+        "id": 49856,
+        "name": "DSGN Studio Women's Button Detail Embroidered Long Sleeve Top in Navy ",
+        "score": 0.2585
+      },
+      {
+        "id": 49857,
+        "name": "DSGN Studio Women's Button Detail Embroidered Long Sleeve Top in Navy ",
+        "score": 0.2585
+      },
+      {
+        "id": 452579,
+        "name": "Motivi Cargo Trousers - 27W UK 8 Beige Cotton Blend",
+        "score": 0.2583
+      },
+      {
+        "id": 274355,
+        "name": "Good & Lui Cargo Jeans - 26W UK 4 Blue Cotton",
+        "score": 0.258
+      },
+      {
+        "id": 472591,
+        "name": "GALLS Mens Navy Blue Workwear Shirt M Cotton Blend Short Sleeve Pocket",
+        "score": 0.2572
+      },
+      {
+        "id": 58595,
+        "name": "DSGN Studio Women's Square Script Embroidered Rib Fitted Button Throug",
+        "score": 0.2558
+      },
+      {
+        "id": 58596,
+        "name": "DSGN Studio Women's Square Script Embroidered Rib Fitted Button Throug",
+        "score": 0.2558
+      },
+      {
+        "id": 207733,
+        "name": "DICKIES Mens Black Cotton Work Shirt 2XL Button Up Short Sleeve Casual",
+        "score": 0.2553
+      }
+    ]
+  },
+  "analyst": {
+    "ms": 9537,
+    "results": [
+      {
+        "id": 198438,
+        "name": "Mafia Costume - Mafia Halloween Costume - Italian Mafia Charcoal Gray ",
+        "score": 0.2491
+      },
+      {
+        "id": 195538,
+        "name": "Mens Cheaped Price Suit Jackets Designer Casual Cheap Priced Fashion B",
+        "score": 0.249
+      },
+      {
+        "id": 194103,
+        "name": "\"Men's Skinny Wedding Suit - One Button, Peak Lapel, Lowcut Vest, Ligh",
+        "score": 0.2483
+      },
+      {
+        "id": 212573,
+        "name": "\"Mens Stacy Adams Suit - Stacy Adams Suit Men's Glen Plaid Suit - One ",
+        "score": 0.2482
+      },
+      {
+        "id": 198159,
+        "name": "Green Double Breasted Suit Many Styles & Brands $99UP Men's Olive Gree",
+        "score": 0.2479
+      },
+      {
+        "id": 198324,
+        "name": "Mens Overcoat -Mens Long Wool Topcoats- Topcoat For Men-Mens Double br",
+        "score": 0.2466
+      },
+      {
+        "id": 204484,
+        "name": "Black Slim Fit Suit",
+        "score": 0.246
+      },
+      {
+        "id": 43686,
+        "name": "boohoo Women's Single Breasted Relaxed Fit Tailored Blazer in Butter |",
+        "score": 0.2458
+      },
+      {
+        "id": 43688,
+        "name": "boohoo Women's Single Breasted Relaxed Fit Tailored Blazer in Butter |",
+        "score": 0.2458
+      },
+      {
+        "id": 43689,
+        "name": "boohoo Women's Single Breasted Relaxed Fit Tailored Blazer in Butter |",
+        "score": 0.2458
+      }
+    ]
+  },
+  "something for a wedding": {
+    "ms": 6268,
+    "results": [
+      {
+        "id": 334636,
+        "name": "CHIKO Rosie Pointy Toe Stiletto Mary Jane Shoes",
+        "score": 0.2818
+      },
+      {
+        "id": 194394,
+        "name": "Skinny - Shark Silver",
+        "score": 0.2791
+      },
+      {
+        "id": 194756,
+        "name": "Slim Fit Prom Suits - Skinny - Shark Silver",
+        "score": 0.2791
+      },
+      {
+        "id": 194635,
+        "name": "Wedding Guest Suit - White",
+        "score": 0.2791
+      },
+      {
+        "id": 297590,
+        "name": "BARCELONA Red & Black",
+        "score": 0.2783
+      },
+      {
+        "id": 193476,
+        "name": "Grey Prom Suit - Gray Prom Tuxedo - Grey Prom Suit",
+        "score": 0.2779
+      },
+      {
+        "id": 73703,
+        "name": "boohoo Women's Beaded Embroidered Bridal Clutch Bag in White | Pearl",
+        "score": 0.2762
+      },
+      {
+        "id": 221370,
+        "name": "Mens Designer Slim Fit Two Button Wedding Tuxedo in Black",
+        "score": 0.276
+      },
+      {
+        "id": 199456,
+        "name": "Mens Suits Pasadena - One Chest Pockets - Single Breasted Suit",
+        "score": 0.276
+      },
+      {
+        "id": 193455,
+        "name": "Mens Suits Pasadena - Mens Shark Silver Suits",
+        "score": 0.2751
+      }
+    ]
+  },
+  "rainy day in london": {
+    "ms": 6365,
+    "results": [
+      {
+        "id": 467101,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 222512,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 487106,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 251752,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 452538,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 482506,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 467109,
+        "name": "Maxi Dress with Side Slits in Abstract Stripes | Color: Twirls and twi",
+        "score": 0.2471
+      },
+      {
+        "id": 300581,
+        "name": "Dress Lara - Charcoal Wildflowers | Size: 18m",
+        "score": 0.2418
+      },
+      {
+        "id": 300577,
+        "name": "Dress Lara - Charcoal Wildflowers | Size: 24m",
+        "score": 0.2418
+      },
+      {
+        "id": 326329,
+        "name": "Adonis classic linen pants in Charcoal | Size: L",
+        "score": 0.2236
+      }
+    ]
+  },
+  "meeting the parents": {
+    "ms": 6174,
+    "results": [
+      {
+        "id": 104434,
+        "name": "boohoo Women's Maternity Floral Mesh Maxi Dress in Black | Size: 12 | ",
+        "score": 0.2466
+      },
+      {
+        "id": 104432,
+        "name": "boohoo Women's Maternity Floral Mesh Maxi Dress in Black | Size: 14 | ",
+        "score": 0.2466
+      },
+      {
+        "id": 104442,
+        "name": "boohoo Women's Maternity Floral Mesh Maxi Dress in Black | Size: 4 | M",
+        "score": 0.2466
+      },
+      {
+        "id": 104440,
+        "name": "boohoo Women's Maternity Floral Mesh Maxi Dress in Black | Size: 6 | M",
+        "score": 0.2466
+      },
+      {
+        "id": 104438,
+        "name": "boohoo Women's Maternity Floral Mesh Maxi Dress in Black | Size: 8 | M",
+        "score": 0.2466
+      },
+      {
+        "id": 104436,
+        "name": "boohoo Women's Maternity Floral Mesh Maxi Dress in Black | Size: 10 | ",
+        "score": 0.2466
+      },
+      {
+        "id": 260638,
+        "name": "MAM Original Deer & Bird Design 6m+ Pacifier \u2013 2 pcs",
+        "score": 0.2425
+      },
+      {
+        "id": 347154,
+        "name": "MAM Original Deer & Bird Design 6m+ Pacifier \u2013 2 pcs",
+        "score": 0.2425
+      },
+      {
+        "id": 62430,
+        "name": "boohoo Girl's Kids Mini Me Matching Tree Family Pjs in Grey | Size: 5/",
+        "score": 0.2411
+      },
+      {
+        "id": 62429,
+        "name": "boohoo Girl's Kids Mini Me Matching Tree Family Pjs in Grey | Size: 3/",
+        "score": 0.2411
+      }
+    ]
+  }
+}
